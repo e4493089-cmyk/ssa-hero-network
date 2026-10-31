@@ -1,8 +1,9 @@
+import {recruitmentPosts,recruitmentComments} from './recruitment-data';
 import {officialPosts,fieldPosts} from './official-data';
 import {additionalDossiers} from './villains';
 import {communityPosts,communityComments} from './community-data';
 export type Post={id:string;title:string;body:string;category:string;hero:string;affiliation:string;created:string;account?:string;views?:number;replies?:number;board?:string};
-export const seed:Post[]=[...communityPosts,
+export const seed:Post[]=[...recruitmentPosts,...communityPosts,
 {id:'n1',category:'공지사항',title:'공인 히어로 네트워크 이용 및 정보 취급 안내',hero:'포털운영팀',affiliation:'SSA 서울지국',created:'2026-10-31',body:'본 네트워크는 SSA 등록 히어로 및 협력기관의 현장 정보 공유를 지원합니다.\n\n사건 관계자의 개인정보, 피해자 사진 및 작전 중 취득한 비공개 정보를 게시하지 마십시오. 현장 정보는 확인된 사실과 개인의 추정을 구분하여 작성해 주시기 바랍니다.\n\n긴급한 위험 상황은 게시판 대신 소속 지휘체계를 통해 보고하십시오.\n\n※ 이 사이트는 UNKNOWN 세계관을 배경으로 한 창작 커뮤니티입니다. 실제 신고·긴급구조 서비스가 아닙니다.',views:1248},
 {id:'n2',category:'공지사항',title:'11월 합동 현장대응 교육 일정 안내',hero:'교육훈련과',affiliation:'SSA 서울지국',created:'2026-10-30',body:'11월 합동교육은 능력 충돌 상황에서의 시민 대피와 현장 인계 절차를 중심으로 진행됩니다.\n\n대상: SSA 소속 및 협력 길드 등록 히어로\n과정: 시민 대피 유도 / 초동 현장 통제 / 기관 간 상황 인계\n\n상세 장소와 조 편성은 소속기관 담당자에게 별도 전달합니다.',views:862},
 {id:'n3',category:'공지사항',title:'포털 정기점검 안내 — 11. 4. 02:00~04:00',hero:'포털운영팀',affiliation:'SSA 서울지국',created:'2026-10-29',body:'서비스 안정화를 위한 정기점검이 예정되어 있습니다. 점검 중 게시판과 자료 열람이 일시적으로 제한될 수 있습니다. 작성 중인 내용은 미리 보관해 주십시오.\n\n점검 일정은 작업 상황에 따라 변경될 수 있습니다.',views:513},
@@ -17,7 +18,7 @@ export const seed:Post[]=[...communityPosts,
 {id:'c4',category:'자유게시판',title:'공용 냉장고에 이름 적어주세요. 제발.',hero:'앵커',affiliation:'SSA 현장대응과',created:'2026-10-29',body:'이름 없는 용기 세 개가 있습니다. 언제 들어왔는지도 모르겠습니다.\n능력으로 해결할 수 있는 문제가 아닙니다.',views:591,replies:4},
 {id:'c5',category:'장비·능력 상담',title:'방수 장갑 건조할 때 열풍 써도 되나요?',hero:'소나기',affiliation:'청람 길드',created:'2026-10-28',body:'안감까지 젖어서 잘 안 마르는데 관리 지침에는 자연 건조만 적혀 있네요.\n예비 장갑 신청해두긴 했습니다. 다들 두 켤레씩 돌려 쓰시나요?',views:208,replies:1},
 ];
-export const initialComments:Record<string,{hero:string;affiliation:string;body:string}[]>={...communityComments,
+export const initialComments:Record<string,{hero:string;affiliation:string;body:string}[]>={...recruitmentComments,...communityComments,
 c1:[{hero:'앵커',affiliation:'SSA 현장대응과',body:'교육 참가증 보여주시면 식권 구매 가능합니다. 2층이에요.'},{hero:'철야',affiliation:'백야 길드',body:'오른쪽 엘리베이터 타세요. 왼쪽 타면 또 길 잃습니다.'},{hero:'잔물결',affiliation:'해오름 길드',body:'감사합니다. 이미 왼쪽 탈 생각이었는데 살았네요.'}],
 c2:[{hero:'방벽',affiliation:'청람 길드',body:'이틀 연속은 가능합니다. 사흘째부터는 단골입니다.'},{hero:'철야',affiliation:'백야 길드',body:'그럼 이미 단골이네요.'}],
 c4:[{hero:'리벳',affiliation:'개인 히어로',body:'마지막 문장에서 현장 지휘관의 피로가 느껴져요.'},{hero:'앵커',affiliation:'SSA 현장대응과',body:'농담 아닙니다. 금요일에 정리합니다.'}],
