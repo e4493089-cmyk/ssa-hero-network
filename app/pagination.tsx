@@ -7,7 +7,7 @@ export function Pagination({page,total,onChange}:{page:number;total:number;onCha
  const current=Math.min(count,Math.max(1,page));
  const start=Math.max(1,Math.min(current-2,count-4));
  const numbers=Array.from({length:Math.min(5,count)},(_,i)=>start+i);
- const move=(target:number)=>{onChange(target);window.scrollTo({top:0,behavior:'smooth'})};
+ const move=(target:number)=>{onChange(target)};
  return <div className="pagination" role="navigation" aria-label="게시판 페이지 이동">
   <button type="button" className="page-edge" disabled={current===1} aria-label="첫 페이지" title="첫 페이지" onClick={()=>move(1)}><ChevronsLeft size={15}/></button>
   <button type="button" disabled={current===1} aria-label="이전 페이지" title="이전 페이지" onClick={()=>move(current-1)}><ChevronLeft size={15}/></button>
