@@ -26,7 +26,7 @@ export const recruitmentPosts:Post[]=[
     "title": "[모집중] 평일 주간 합동훈련 참여자 모집",
     "body": "등록 훈련시설에서 기본 훈련에 함께 참여할 히어로를 모집합니다.\n\n모집 인원: 1~2명\n대상: 평일 주간 참여가 가능한 등록 히어로\n내용: 시설 승인 범위 내 기본 훈련 과정\n일정: 평일 10:00 이후, 참여자 간 협의\n비용: 시설 이용료 각자 부담\n보수: 별도 지급 없음\n\n훈련시설 예약 및 안전수칙 확인 후 일정을 확정합니다. 참여 가능 시간대를 댓글로 남겨 주시기 바랍니다.",
     "hero": "리벳",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-30",
     "replies": 2
   },
@@ -86,12 +86,12 @@ export const recruitmentComments:Record<string,{hero:string;affiliation:string;b
     {
       "hero": "소나기",
       "affiliation": "청람 길드",
-      "body": "소속 길드가 없는 개인 히어로도 지원할 수 있는지 문의드립니다."
+      "body": "소속 길드가 없는 미소속도 지원할 수 있는지 문의드립니다."
     },
     {
       "hero": "교육운영 담당",
       "affiliation": "청람 길드",
-      "body": "개인 히어로도 지원 가능합니다. SSA 등록 및 기본 안전교육 이수 여부를 확인한 후 안내하겠습니다."
+      "body": "미소속도 지원 가능합니다. SSA 등록 및 기본 안전교육 이수 여부를 확인한 후 안내하겠습니다."
     }
   ],
   "recruit-2": [
@@ -114,7 +114,7 @@ export const recruitmentComments:Record<string,{hero:string;affiliation:string;b
     },
     {
       "hero": "리벳",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "오전 10시 진행 가능합니다. 시설 예약 가능 여부와 참여자 근무 일정을 확인한 후 확정하겠습니다."
     }
   ],
@@ -157,7 +157,7 @@ export const recruitmentComments:Record<string,{hero:string;affiliation:string;b
   "recruit-7": [
     {
       "hero": "리벳",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "차기 회차 모집 일정이 정해지면 공지 부탁드립니다."
     },
     {
