@@ -4,9 +4,9 @@ export const recruitmentPosts:Post[]=[
     "id": "recruit-1",
     "category": "인력 모집",
     "title": "[모집중] 주말 기초훈련 운영 보조 인력 2명 모집",
-    "body": "11월 기초훈련 운영을 지원할 인력을 다음과 같이 모집합니다.\n\n모집 인원: 2명\n업무: 참가자 안내 및 장비 반납 확인\n일시: 2026. 11. 7. 09:00~13:00\n지원 자격: SSA 등록 히어로, 기본 안전교육 이수자\n보수: 업무 범위 협의 후 계약서에 명시\n접수: 참여 의사 확인 후 청람 길드 교육운영 창구 별도 안내\n\n교전 업무는 포함되지 않습니다. 최종 참여는 등록 및 교육 이수 여부 확인 후 확정합니다.",
+    "body": "11월 기초훈련 운영을 지원할 인력을 다음과 같이 모집합니다.\n\n모집 인원: 2명\n업무: 참가자 안내 및 장비 반납 확인\n일시: 2026. 11. 7. 09:00~13:00\n지원 자격: SSA 등록 히어로, 기본 안전교육 이수자\n보수: 업무 범위 협의 후 계약서에 명시\n접수: 참여 의사 확인 후 넥시온 교육운영 창구 별도 안내\n\n교전 업무는 포함되지 않습니다. 최종 참여는 등록 및 교육 이수 여부 확인 후 확정합니다.",
     "hero": "교육운영 담당",
-    "affiliation": "청람 길드",
+    "affiliation": "넥시온",
     "created": "2026-10-31",
     "replies": 2
   },
@@ -14,9 +14,9 @@ export const recruitmentPosts:Post[]=[
     "id": "recruit-2",
     "category": "인력 모집",
     "title": "[모집중] 장비 재고 목록 정리 단기 지원 인력 모집",
-    "body": "장비 재고 목록 정리를 위한 단기 지원 인력을 모집합니다.\n\n모집 인원: 1명\n업무: 재고 목록 대조, 라벨 확인, 전산 입력\n기간: 2026. 11. 3.~11. 5. 중 협의\n지원 자격: SSA 등록 히어로, 기관 보안 안내 확인자\n우대 사항: 표 계산 프로그램 사용 가능자\n보수: 업무 범위 및 근무일 확정 후 서면 합의\n접수: 해오름 길드 장비관리 창구를 통해 별도 진행\n\n장비 수리 및 성능 검사는 포함되지 않습니다. 보관 위치와 장비 규격은 공개하지 않습니다.",
+    "body": "장비 재고 목록 정리를 위한 단기 지원 인력을 모집합니다.\n\n모집 인원: 1명\n업무: 재고 목록 대조, 라벨 확인, 전산 입력\n기간: 2026. 11. 3.~11. 5. 중 협의\n지원 자격: SSA 등록 히어로, 기관 보안 안내 확인자\n우대 사항: 표 계산 프로그램 사용 가능자\n보수: 업무 범위 및 근무일 확정 후 서면 합의\n접수: 해오름 장비관리 창구를 통해 별도 진행\n\n장비 수리 및 성능 검사는 포함되지 않습니다. 보관 위치와 장비 규격은 공개하지 않습니다.",
     "hero": "장비관리 담당",
-    "affiliation": "해오름 길드",
+    "affiliation": "해오름",
     "created": "2026-10-31",
     "replies": 2
   },
@@ -46,7 +46,7 @@ export const recruitmentPosts:Post[]=[
     "title": "[수요조사] 시민안전 체험행사 운영 지원 참여 의향 조사",
     "body": "11월 시민안전 체험행사의 운영 지원 인력 수요를 조사합니다.\n\n업무: 시민 동선 안내, 대기열 관리, 분실물 담당자 연결\n참여 대상: SSA 등록 히어로\n일시·장소: 행사 계획 확정 후 별도 공고\n보수·모집 인원: 본 모집 공고 시 안내\n\n본 게시물은 참여 의향 조사이며 지원 접수를 확정하는 공고가 아닙니다. 참여 의향이 있는 경우 댓글을 남겨 주십시오. 공개 행사 운영 지원으로, 교전 업무는 포함하지 않습니다.",
     "hero": "대외협력 담당",
-    "affiliation": "적송 길드",
+    "affiliation": "ARCADIA",
     "created": "2026-10-29",
     "replies": 2
   },
@@ -64,9 +64,9 @@ export const recruitmentPosts:Post[]=[
     "id": "recruit-7",
     "category": "인력 모집",
     "title": "[마감] 합동교육 운영 지원 인력 모집 종료",
-    "body": "합동교육 운영 지원 인력 모집이 충원 완료되어 접수를 종료합니다.\n\n참여 확정자에게는 백야 길드 담당 창구를 통해 개별 안내하였습니다. 본 공고에 대한 추가 지원은 접수하지 않습니다.\n\n지원해 주신 모든 분께 감사드립니다. 차기 모집 일정은 확정 후 별도 공고하겠습니다.",
+    "body": "합동교육 운영 지원 인력 모집이 충원 완료되어 접수를 종료합니다.\n\n참여 확정자에게는 서광 담당 창구를 통해 개별 안내하였습니다. 본 공고에 대한 추가 지원은 접수하지 않습니다.\n\n지원해 주신 모든 분께 감사드립니다. 차기 모집 일정은 확정 후 별도 공고하겠습니다.",
     "hero": "교육운영 담당",
-    "affiliation": "백야 길드",
+    "affiliation": "서광",
     "created": "2026-10-28",
     "replies": 2
   },
@@ -76,7 +76,7 @@ export const recruitmentPosts:Post[]=[
     "title": "[마감] 자료실 목록 점검 단기 지원 모집 종료",
     "body": "자료실 목록 점검 지원 인력 모집을 종료합니다.\n\n현재 참여 예정자의 일정 및 등록 사항을 확인하고 있습니다. 최종 참여 여부는 담당 부서 확인 후 개별 통보합니다.\n업무는 지정 공간 내 목록 대조로 한정되며 원본 자료의 외부 반출은 허용하지 않습니다.\n\n추가 모집이 필요한 경우 별도 공고하겠습니다.",
     "hero": "자료관리 담당",
-    "affiliation": "해오름 길드",
+    "affiliation": "해오름",
     "created": "2026-10-28",
     "replies": 2
   }
@@ -85,31 +85,31 @@ export const recruitmentComments:Record<string,{hero:string;affiliation:string;b
   "recruit-1": [
     {
       "hero": "소나기",
-      "affiliation": "청람 길드",
+      "affiliation": "넥시온",
       "body": "소속 길드가 없는 미소속도 지원할 수 있는지 문의드립니다."
     },
     {
       "hero": "교육운영 담당",
-      "affiliation": "청람 길드",
+      "affiliation": "넥시온",
       "body": "미소속도 지원 가능합니다. SSA 등록 및 기본 안전교육 이수 여부를 확인한 후 안내하겠습니다."
     }
   ],
   "recruit-2": [
     {
       "hero": "등대",
-      "affiliation": "해오름 길드",
+      "affiliation": "해오름",
       "body": "현장 경력이 짧은 경우에도 지원 가능한지 확인 부탁드립니다."
     },
     {
       "hero": "장비관리 담당",
-      "affiliation": "해오름 길드",
+      "affiliation": "해오름",
       "body": "지원 가능합니다. 등록 여부 확인 후 업무 내용을 안내하며, 표 계산 프로그램 사용 경험이 있는 경우 함께 기재해 주십시오."
     }
   ],
   "recruit-3": [
     {
       "hero": "철야",
-      "affiliation": "백야 길드",
+      "affiliation": "서광",
       "body": "야간 근무자로 오전 시간대 참여를 희망합니다. 오전 10시에도 진행 가능한지 문의드립니다."
     },
     {
@@ -121,7 +121,7 @@ export const recruitmentComments:Record<string,{hero:string;affiliation:string;b
   "recruit-4": [
     {
       "hero": "잔물결",
-      "affiliation": "해오름 길드",
+      "affiliation": "해오름",
       "body": "공개 안내문 검토 경험이 있습니다. 해당 경력으로 지원 가능한지 문의드립니다."
     },
     {
@@ -133,12 +133,12 @@ export const recruitmentComments:Record<string,{hero:string;affiliation:string;b
   "recruit-5": [
     {
       "hero": "방벽",
-      "affiliation": "청람 길드",
+      "affiliation": "넥시온",
       "body": "본 모집 일정 확정 시 후속 공고를 부탁드립니다."
     },
     {
       "hero": "대외협력 담당",
-      "affiliation": "적송 길드",
+      "affiliation": "ARCADIA",
       "body": "행사 계획이 확정되면 일정과 보수를 포함한 본 모집 공고를 게시하겠습니다. 현재는 참여 의향만 확인합니다."
     }
   ],
@@ -162,19 +162,19 @@ export const recruitmentComments:Record<string,{hero:string;affiliation:string;b
     },
     {
       "hero": "교육운영 담당",
-      "affiliation": "백야 길드",
+      "affiliation": "서광",
       "body": "차기 일정은 아직 확정되지 않았습니다. 확정 후 본 게시판에 공고하겠습니다."
     }
   ],
   "recruit-8": [
     {
       "hero": "항로",
-      "affiliation": "적송 길드",
+      "affiliation": "ARCADIA",
       "body": "후속 모집 공고도 동일 게시판에서 확인할 수 있는지 문의드립니다."
     },
     {
       "hero": "자료관리 담당",
-      "affiliation": "해오름 길드",
+      "affiliation": "해오름",
       "body": "네. 후속 모집은 인력 모집 게시판에 별도 공고하겠습니다."
     }
   ]
