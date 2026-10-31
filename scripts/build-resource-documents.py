@@ -158,7 +158,8 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument('--output',default='public/resources');args=ap.parse_args()
     output=Path(args.output);output.mkdir(parents=True,exist_ok=True);fonts();records=[]
     docs=catalog()
-    assert len(docs)==24 and len({r['code'] for r in docs})==24
+    assert docs and len({r['code'] for r in docs}) == len(docs)
+    assert len({r['id'] for r in docs}) == len(docs)
     for r in docs:
         files=[]
         path=output/(r['code']+'.pdf');pdf(r,path)
