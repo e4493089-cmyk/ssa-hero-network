@@ -11,3 +11,6 @@
 @media print{.header-search,.board-search,.article-navigation,.pagination{display:none!important}}
 
 .article-navigation .current-post{background:#f0f4f8;cursor:default}.article-navigation .current-post .row-title{font-weight:750;color:#173f6b}.article-navigation .current-post .row-author,.article-navigation .current-post time{font-weight:650;color:#536a82}.article-navigation .current-post:hover{background:#f0f4f8}
+
+/* Keep the login card at its content height instead of stretching with the banner. */
+.hero-grid>.account-card{align-self:start;padding-bottom:17px}.hero-grid>.account-card>.account-note{margin-bottom:0}
