@@ -1,1 +1,1 @@
-export const guildNames=["넥시온","서광","해오름","ARCADIA","태림","BLUE HAVEN","잔영","노스윈드","한가람","LAST LINE","도원"] as const;
+export const guildNames=["넥시온","서광","해오름","아르카디아","태림","블루헤이븐","잔영","노스윈드","한가람","라스트라인","도원"] as const;
