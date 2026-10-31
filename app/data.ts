@@ -14,14 +14,14 @@ export const seed:Post[]=[...recruitmentPosts,...communityPosts,
 {id:'f3',category:'현장 정보',title:'야간 수색 인계 시 남겨두면 좋은 항목 정리',hero:'등대',affiliation:'해오름 길드',created:'2026-10-28',body:'수색 완료 구역, 미확인 구역, 조명 상태, 구조 요청 접수 위치를 따로 기록하면 인계가 빨라집니다.\n\n지도에 미확인 구역까지 완료 표시하지 않도록 한 번 더 확인 부탁드립니다.',views:279,replies:1},
 {id:'c1',category:'자유게시판',title:'구내식당 외부 길드도 이용할 수 있나요?',hero:'잔물결',affiliation:'해오름 길드',created:'2026-10-31',body:'내일 교육 때문에 서울지국 가는데 점심을 어디서 먹어야 하나 해서요. 교육 참석자도 식권 구매 가능한가요?\n처음 가는 거라 건물 입구부터 헤맬 예정입니다.',views:216,replies:3},
 {id:'c2',category:'자유게시판',title:'야간 근무 끝나고 먹는 첫 끼 추천 받습니다',hero:'철야',affiliation:'백야 길드',created:'2026-10-31',body:'국밥은 어제 먹었고 오늘도 먹어도 되는지 진지하게 고민 중입니다.\n부상 없습니다. 그냥 배고픕니다.',views:187,replies:2},
-{id:'c3',category:'장비·능력 상담',title:'통신 이어피스, 헬멧이랑 같이 쓰는 분 계세요?',hero:'리벳',affiliation:'개인 히어로',created:'2026-10-30',body:'장시간 착용하면 귀가 너무 눌리네요. 현장용 헬멧 안에 넣어도 간섭 적은 형태가 있을까요?\n특정 제품 홍보 말고 착용 방식 조언이면 좋겠습니다.',views:352,replies:2},
+{id:'c3',category:'장비·능력 상담',title:'통신 이어피스, 헬멧이랑 같이 쓰는 분 계세요?',hero:'리벳',affiliation:'미소속',created:'2026-10-30',body:'장시간 착용하면 귀가 너무 눌리네요. 현장용 헬멧 안에 넣어도 간섭 적은 형태가 있을까요?\n특정 제품 홍보 말고 착용 방식 조언이면 좋겠습니다.',views:352,replies:2},
 {id:'c4',category:'자유게시판',title:'공용 냉장고에 이름 적어주세요. 제발.',hero:'앵커',affiliation:'SSA 현장대응과',created:'2026-10-29',body:'이름 없는 용기 세 개가 있습니다. 언제 들어왔는지도 모르겠습니다.\n능력으로 해결할 수 있는 문제가 아닙니다.',views:591,replies:4},
 {id:'c5',category:'장비·능력 상담',title:'방수 장갑 건조할 때 열풍 써도 되나요?',hero:'소나기',affiliation:'청람 길드',created:'2026-10-28',body:'안감까지 젖어서 잘 안 마르는데 관리 지침에는 자연 건조만 적혀 있네요.\n예비 장갑 신청해두긴 했습니다. 다들 두 켤레씩 돌려 쓰시나요?',views:208,replies:1},
 ];
 export const initialComments:Record<string,{id?:string;parent?:string;hero:string;affiliation:string;body:string}[]>={...recruitmentComments,...communityComments,
 c1:[{hero:'앵커',affiliation:'SSA 현장대응과',body:'교육 참가증 보여주시면 식권 구매 가능합니다. 2층이에요.'},{hero:'철야',affiliation:'백야 길드',body:'오른쪽 엘리베이터 타세요. 왼쪽 타면 또 길 잃습니다.'},{hero:'잔물결',affiliation:'해오름 길드',body:'감사합니다. 이미 왼쪽 탈 생각이었는데 살았네요.'}],
 c2:[{hero:'방벽',affiliation:'청람 길드',body:'이틀 연속은 가능합니다. 사흘째부터는 단골입니다.'},{hero:'철야',affiliation:'백야 길드',body:'그럼 이미 단골이네요.'}],
-c4:[{hero:'리벳',affiliation:'개인 히어로',body:'마지막 문장에서 현장 지휘관의 피로가 느껴져요.'},{hero:'앵커',affiliation:'SSA 현장대응과',body:'농담 아닙니다. 금요일에 정리합니다.'}],
+c4:[{hero:'리벳',affiliation:'미소속',body:'마지막 문장에서 현장 지휘관의 피로가 느껴져요.'},{hero:'앵커',affiliation:'SSA 현장대응과',body:'농담 아닙니다. 금요일에 정리합니다.'}],
 f1:[{hero:'앵커',affiliation:'SSA 현장대응과',body:'담당팀 전달 확인했습니다. 추가 식별 정보는 공개 게시를 삼가 주세요.'}],
 c3:[{hero:'방벽',affiliation:'청람 길드',body:'장비실에서 헬멧 호환 규격부터 확인해 보세요. 패드 바꾸니 나아졌습니다.'}]
 };
