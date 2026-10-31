@@ -39,7 +39,7 @@ def catalog():
     return json.loads(text.split('export const resources:Resource[]=',1)[1].strip().rstrip(';'))
 
 def style(size=10, bold=False, **kw):
-    return ParagraphStyle('ssa',fontName=FONT_BOLD if bold else FONT_NAME,fontSize=size,leading=size*1.65,wordWrap='CJK',textColor=colors.HexColor('#24394d'),spaceAfter=7,**kw)
+    return ParagraphStyle('ssa',fontName=FONT_BOLD if bold else FONT_NAME,fontSize=size,leading=size*1.5,wordWrap='CJK',textColor=colors.HexColor('#24394d'),spaceAfter=5,**kw)
 
 def p(text, size=10, bold=False):
     return Paragraph(escape(text).replace('\n','<br/>'), style(size,bold))
@@ -80,10 +80,10 @@ def pdf(r,path):
     w = A4[0]-96
     story = [p(r['board']+' / '+r['kind'],9),p(r['title'],18,True),Spacer(1,9)]
     story.append(table([['문서번호',r['code'],'개정일',r['created']],['담당 부서',r['hero'],'판 / 구분',r['version']+' / 공통 업무자료']],[70,w/2-70,70,w/2-70]))
-    story.append(Spacer(1,17))
+    story.append(Spacer(1,8))
     if r['kind']=='서식':
-        story.append(table([['작성','확인','접수'],['성명 / 서명:','성명 / 서명:','접수번호 / 일자:']],[w/3]*3,heights=[28,40]))
-        story.append(Spacer(1,15))
+        story.append(table([['작성','확인','접수'],['성명 / 서명:','성명 / 서명:','접수번호 / 일자:']],[w/3]*3,heights=[26,34]))
+        story.append(Spacer(1,10))
     for block in r['body'].split('\n\n'):
         lines=block.splitlines()
         heading,body=lines[0],lines[1:]
@@ -94,7 +94,7 @@ def pdf(r,path):
                 if '____' in line and ':' in line:
                     label=line.split(':',1)[0]
                     rows.append([label,' '])
-                    heights.append(40 if any(x in label for x in ['사항','내용','경위','업무','근거','사유','결과','상황','관측','특징','요소','제안']) else 30)
+                    heights.append(34 if any(x in label for x in ['사항','내용','경위','업무','근거','사유','결과','상황','관측','특징','요소','제안']) else 28)
                 elif line.strip():
                     if rows:
                         story.append(table(rows,[155,w-155],heights=heights));rows=[];heights=[]
