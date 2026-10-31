@@ -8,7 +8,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-001",
     "affiliation": "노스윈드",
     "created": "2026-10-31",
-    "replies": 3,
+    "replies": 0,
     "views": 183
   },
   {
@@ -19,7 +19,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-002",
     "affiliation": "블루헤이븐",
     "created": "2026-10-31",
-    "replies": 3,
+    "replies": 2,
     "views": 320
   },
   {
@@ -30,7 +30,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-003",
     "affiliation": "미소속",
     "created": "2026-10-31",
-    "replies": 3,
+    "replies": 2,
     "views": 457
   },
   {
@@ -41,7 +41,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-004",
     "affiliation": "서광",
     "created": "2026-10-30",
-    "replies": 3,
+    "replies": 1,
     "views": 594
   },
   {
@@ -52,7 +52,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-005",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-30",
-    "replies": 3,
+    "replies": 1,
     "views": 731
   },
   {
@@ -63,7 +63,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-006",
     "affiliation": "도원",
     "created": "2026-10-30",
-    "replies": 3,
+    "replies": 0,
     "views": 868
   },
   {
@@ -74,7 +74,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-007",
     "affiliation": "라스트라인",
     "created": "2026-10-29",
-    "replies": 3,
+    "replies": 1,
     "views": 1005
   },
   {
@@ -85,7 +85,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-008",
     "affiliation": "도원",
     "created": "2026-10-29",
-    "replies": 3,
+    "replies": 0,
     "views": 1142
   },
   {
@@ -96,7 +96,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-009",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-29",
-    "replies": 3,
+    "replies": 0,
     "views": 1279
   },
   {
@@ -107,7 +107,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-010",
     "affiliation": "미소속",
     "created": "2026-10-28",
-    "replies": 3,
+    "replies": 1,
     "views": 1416
   },
   {
@@ -118,7 +118,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-011",
     "affiliation": "라스트라인",
     "created": "2026-10-28",
-    "replies": 3,
+    "replies": 1,
     "views": 1553
   },
   {
@@ -129,7 +129,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-012",
     "affiliation": "도원",
     "created": "2026-10-28",
-    "replies": 3,
+    "replies": 2,
     "views": 1690
   },
   {
@@ -140,7 +140,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-013",
     "affiliation": "넥시온",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 2,
     "views": 1827
   },
   {
@@ -151,7 +151,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-014",
     "affiliation": "서광",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 0,
     "views": 1964
   },
   {
@@ -173,7 +173,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-016",
     "affiliation": "SSA · 운영지원과",
     "created": "2026-10-26",
-    "replies": 3,
+    "replies": 0,
     "views": 338
   },
   {
@@ -184,7 +184,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-017",
     "affiliation": "미소속",
     "created": "2026-10-26",
-    "replies": 3,
+    "replies": 0,
     "views": 475
   },
   {
@@ -195,7 +195,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-018",
     "affiliation": "넥시온",
     "created": "2026-10-26",
-    "replies": 3,
+    "replies": 1,
     "views": 612
   },
   {
@@ -206,7 +206,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-019",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-25",
-    "replies": 3,
+    "replies": 0,
     "views": 749
   },
   {
@@ -217,7 +217,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-020",
     "affiliation": "태림",
     "created": "2026-10-25",
-    "replies": 3,
+    "replies": 2,
     "views": 886
   },
   {
@@ -228,7 +228,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-021",
     "affiliation": "도원",
     "created": "2026-10-25",
-    "replies": 3,
+    "replies": 2,
     "views": 1023
   },
   {
@@ -250,7 +250,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-023",
     "affiliation": "미소속",
     "created": "2026-10-24",
-    "replies": 3,
+    "replies": 0,
     "views": 1297
   },
   {
@@ -261,7 +261,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-024",
     "affiliation": "SSA · 운영지원과",
     "created": "2026-10-24",
-    "replies": 3,
+    "replies": 0,
     "views": 1434
   },
   {
@@ -272,7 +272,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-025",
     "affiliation": "한가람",
     "created": "2026-10-23",
-    "replies": 3,
+    "replies": 1,
     "views": 1571
   },
   {
@@ -283,7 +283,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-026",
     "affiliation": "미소속",
     "created": "2026-10-23",
-    "replies": 3,
+    "replies": 1,
     "views": 1708
   },
   {
@@ -294,7 +294,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-027",
     "affiliation": "노스윈드",
     "created": "2026-10-23",
-    "replies": 3,
+    "replies": 1,
     "views": 1845
   },
   {
@@ -305,7 +305,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-028",
     "affiliation": "넥시온",
     "created": "2026-10-22",
-    "replies": 3,
+    "replies": 1,
     "views": 1982
   },
   {
@@ -316,7 +316,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-029",
     "affiliation": "라스트라인",
     "created": "2026-10-22",
-    "replies": 3,
+    "replies": 0,
     "views": 219
   },
   {
@@ -327,7 +327,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-030",
     "affiliation": "미소속",
     "created": "2026-10-22",
-    "replies": 3,
+    "replies": 2,
     "views": 356
   },
   {
@@ -338,7 +338,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-031",
     "affiliation": "미소속",
     "created": "2026-10-21",
-    "replies": 3,
+    "replies": 2,
     "views": 493
   },
   {
@@ -349,7 +349,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-032",
     "affiliation": "라스트라인",
     "created": "2026-10-21",
-    "replies": 3,
+    "replies": 1,
     "views": 630
   },
   {
@@ -360,7 +360,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-033",
     "affiliation": "해오름",
     "created": "2026-10-21",
-    "replies": 3,
+    "replies": 1,
     "views": 767
   },
   {
@@ -371,7 +371,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-034",
     "affiliation": "태림",
     "created": "2026-10-20",
-    "replies": 3,
+    "replies": 1,
     "views": 904
   },
   {
@@ -382,7 +382,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-035",
     "affiliation": "미소속",
     "created": "2026-10-20",
-    "replies": 3,
+    "replies": 0,
     "views": 1041
   },
   {
@@ -393,7 +393,7 @@ export const communityPosts:Post[]=[
     "hero": "회원-036",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-20",
-    "replies": 3,
+    "replies": 0,
     "views": 1178
   },
   {
@@ -404,7 +404,7 @@ export const communityPosts:Post[]=[
     "hero": "자유회원-0",
     "affiliation": "미소속",
     "created": "2026-10-31",
-    "replies": 2
+    "replies": 0
   },
   {
     "id": "free-talk-2",
@@ -414,7 +414,7 @@ export const communityPosts:Post[]=[
     "hero": "자유회원-1",
     "affiliation": "잔영",
     "created": "2026-10-31",
-    "replies": 2
+    "replies": 0
   },
   {
     "id": "free-talk-3",
@@ -424,7 +424,7 @@ export const communityPosts:Post[]=[
     "hero": "자유회원-2",
     "affiliation": "서광",
     "created": "2026-10-31",
-    "replies": 2
+    "replies": 0
   },
   {
     "id": "free-talk-4",
@@ -434,7 +434,7 @@ export const communityPosts:Post[]=[
     "hero": "자유회원-3",
     "affiliation": "아르카디아",
     "created": "2026-10-30",
-    "replies": 2
+    "replies": 1
   },
   {
     "id": "free-talk-5",
@@ -444,7 +444,7 @@ export const communityPosts:Post[]=[
     "hero": "자유회원-4",
     "affiliation": "넥시온",
     "created": "2026-10-30",
-    "replies": 2
+    "replies": 1
   },
   {
     "id": "free-talk-6",
@@ -474,7 +474,7 @@ export const communityPosts:Post[]=[
     "hero": "자유회원-7",
     "affiliation": "미소속",
     "created": "2026-10-29",
-    "replies": 2
+    "replies": 1
   },
   {
     "id": "free-talk-9",
@@ -484,7 +484,7 @@ export const communityPosts:Post[]=[
     "hero": "자유회원-8",
     "affiliation": "한가람",
     "created": "2026-10-29",
-    "replies": 2
+    "replies": 1
   },
   {
     "id": "free-talk-10",
@@ -494,745 +494,8 @@ export const communityPosts:Post[]=[
     "hero": "자유회원-9",
     "affiliation": "블루헤이븐",
     "created": "2026-10-28",
-    "replies": 2
-  }
-];
-export const communityComments:Record<string,{hero:string;affiliation:string;body:string;parent?:string}[]>={
-  "community-001": [
-    {
-      "hero": "댓글회원-0-0",
-      "affiliation": "넥시온",
-      "body": "닫힌거랑 끝난거랑 다르지 ㄹㅇ"
-    },
-    {
-      "hero": "댓글회원-0-1",
-      "affiliation": "노스윈드",
-      "body": "이런건 해당팀에 전달해줘 당사자는 못볼수도 있음"
-    },
-    {
-      "hero": "회원-001",
-      "affiliation": "노스윈드",
-      "body": "ㅇㅇ 현장번호로 감사의견 넣으려고"
-    }
-  ],
-  "community-002": [
-    {
-      "hero": "댓글회원-1-0",
-      "affiliation": "넥시온",
-      "body": "의자에 앉아있던 기억만 있음"
-    },
-    {
-      "hero": "댓글회원-1-1",
-      "affiliation": "미소속",
-      "body": "교육시간 의견 받는 공지 올라옴 거기 써봐"
-    },
-    {
-      "hero": "회원-002",
-      "affiliation": "블루헤이븐",
-      "body": "봤음 이번엔 진짜 내보려고"
-    }
-  ],
-  "community-003": [
-    {
-      "hero": "댓글회원-2-0",
-      "affiliation": "미소속",
-      "body": "접촉이력 먼저 말하고 예약잡아"
-    },
-    {
-      "hero": "댓글회원-2-1",
-      "affiliation": "SSA · 현장대응과",
-      "body": "장비 종류마다 받는곳 다르더라 등록 창구에 물어봐"
-    },
-    {
-      "hero": "회원-003",
-      "affiliation": "미소속",
-      "body": "아 무작정 들고갈뻔 ㄳ"
-    }
-  ],
-  "community-004": [
-    {
-      "hero": "댓글회원-3-0",
-      "affiliation": "SSA · 현장대응과",
-      "body": "우리도 표지 고치다가 점심지남"
-    },
-    {
-      "hero": "댓글회원-3-1",
-      "affiliation": "한가람",
-      "body": "보고서 제목부터 이미 오래걸릴것같다"
-    },
-    {
-      "hero": "회원-004",
-      "affiliation": "서광",
-      "body": "퇴근은 명예롭게 늦음"
-    }
-  ],
-  "community-005": [
-    {
-      "hero": "댓글회원-4-0",
-      "affiliation": "태림",
-      "body": "그 두개 합쳐쓰면 뒤에서 계속 전화옴"
-    },
-    {
-      "hero": "댓글회원-4-1",
-      "affiliation": "라스트라인",
-      "body": "완료랑 미확인도 분리돼서 좋더라"
-    },
-    {
-      "hero": "회원-005",
-      "affiliation": "SSA · 현장대응과",
-      "body": "ㅇㅇ 사소한데 덜피곤함"
-    }
-  ],
-  "community-006": [
-    {
-      "hero": "댓글회원-5-0",
-      "affiliation": "라스트라인",
-      "body": "통제선은 잘 지키면 아무일도 없어보임"
-    },
-    {
-      "hero": "댓글회원-5-1",
-      "affiliation": "한가람",
-      "body": "아무일 없게 만든 사람들인데"
-    },
-    {
-      "hero": "회원-006",
-      "affiliation": "도원",
-      "body": "그니까 누가 더힘드냐가 아니라 기준 얘기임"
-    }
-  ],
-  "community-007": [
-    {
-      "hero": "댓글회원-6-0",
-      "affiliation": "잔영",
-      "body": "이거 길드 계약이랑 현장 인계 둘다봐야됨"
-    },
-    {
-      "hero": "댓글회원-6-1",
-      "affiliation": "해오름",
-      "body": "날짜만 맞추지말고 담당자한테 기록 남겨"
-    },
-    {
-      "hero": "회원-007",
-      "affiliation": "라스트라인",
-      "body": "ㅇㅇ 애매해서 미리 물어보려는거"
-    }
-  ],
-  "community-008": [
-    {
-      "hero": "댓글회원-7-0",
-      "affiliation": "잔영",
-      "body": "회수물 아니고 획득물"
-    },
-    {
-      "hero": "댓글회원-7-1",
-      "affiliation": "미소속",
-      "body": "장비실에 껍질 두고오진 마라"
-    },
-    {
-      "hero": "회원-008",
-      "affiliation": "도원",
-      "body": "이미 버렸음 그런사람아님"
-    }
-  ],
-  "community-009": [
-    {
-      "hero": "댓글회원-8-0",
-      "affiliation": "미소속",
-      "body": "아무일 없는날이 제일 낫지"
-    },
-    {
-      "hero": "댓글회원-8-1",
-      "affiliation": "SSA · 현장대응과",
-      "body": "그말 보고서에도 좀 써줬으면"
-    },
-    {
-      "hero": "회원-009",
-      "affiliation": "SSA · 현장대응과",
-      "body": "일없던거랑 일안한거는 다르다고"
-    }
-  ],
-  "community-010": [
-    {
-      "hero": "댓글회원-9-0",
-      "affiliation": "SSA · 현장대응과",
-      "body": "담당자마다 차이는 있는데 신청은 편함"
-    },
-    {
-      "hero": "댓글회원-9-1",
-      "affiliation": "한가람",
-      "body": "편한거랑 원하는시간 다되는건 또다름"
-    },
-    {
-      "hero": "회원-010",
-      "affiliation": "미소속",
-      "body": "그래도 신청부터 한숨듣진 않는거네ㅋㅋ"
-    }
-  ],
-  "community-011": [
-    {
-      "hero": "댓글회원-10-0",
-      "affiliation": "태림",
-      "body": "못들었으면 다시물어봐 제발"
-    },
-    {
-      "hero": "댓글회원-10-1",
-      "affiliation": "잔영",
-      "body": "대충 들은걸로 방향 틀면 뒤에 더커짐"
-    },
-    {
-      "hero": "회원-011",
-      "affiliation": "라스트라인",
-      "body": "ㅇㅋ 짧게 재확인할게"
-    }
-  ],
-  "community-012": [
-    {
-      "hero": "댓글회원-11-0",
-      "affiliation": "도원",
-      "body": "기상도 근무습관됨"
-    },
-    {
-      "hero": "댓글회원-11-1",
-      "affiliation": "잔영",
-      "body": "일단 먹고다시자"
-    },
-    {
-      "hero": "회원-012",
-      "affiliation": "도원",
-      "body": "먹다가 완전히 깼다 망함"
-    }
-  ],
-  "community-013": [
-    {
-      "hero": "댓글회원-12-0",
-      "affiliation": "태림",
-      "body": "소속보고 전직원 연구원인줄아나"
-    },
-    {
-      "hero": "댓글회원-12-1",
-      "affiliation": "아르카디아",
-      "body": "우리도 지급품 이름 겨우외움"
-    },
-    {
-      "hero": "회원-013",
-      "affiliation": "넥시온",
-      "body": "심지어 나도 반납하라고할까봐 못열어봄"
-    }
-  ],
-  "community-014": [
-    {
-      "hero": "댓글회원-13-0",
-      "affiliation": "노스윈드",
-      "body": "어디서 썼는지 먼저말해"
-    },
-    {
-      "hero": "댓글회원-13-1",
-      "affiliation": "미소속",
-      "body": "부산물 접촉없어도 사용이력은 남기더라"
-    },
-    {
-      "hero": "회원-014",
-      "affiliation": "서광",
-      "body": "ㅇㅋ 괜히 새거라고 보내진 않을게"
-    }
-  ],
-  "community-015": [
-    {
-      "hero": "댓글회원-14-0",
-      "affiliation": "미소속",
-      "body": "미소속이라고 경력도 없는줄암"
-    },
-    {
-      "hero": "댓글회원-14-1",
-      "affiliation": "SSA · 현장대응과",
-      "body": "직속이든 길드든 할일 확인이 먼저지"
-    },
-    {
-      "hero": "회원-015",
-      "affiliation": "미소속",
-      "body": "ㅇㅇ 짧게 끝나서 더좋았음"
-    }
-  ],
-  "community-016": [
-    {
-      "hero": "댓글회원-15-0",
-      "affiliation": "SSA · 현장대응과",
-      "body": "복붙하다가 날짜만 예전거남음"
-    },
-    {
-      "hero": "댓글회원-15-1",
-      "affiliation": "한가람",
-      "body": "기관 정산칸이랑 섞여서 더그럼"
-    },
-    {
-      "hero": "회원-016",
-      "affiliation": "SSA · 운영지원과",
-      "body": "서식 의견 받길래 적어냄"
-    }
-  ],
-  "community-017": [
-    {
-      "hero": "댓글회원-16-0",
-      "affiliation": "태림",
-      "body": "해당회차 담당자한테 물어보는게 확실"
-    },
-    {
-      "hero": "댓글회원-16-1",
-      "affiliation": "서광",
-      "body": "공고 첨부에 실습별 준비물 있어"
-    },
-    {
-      "hero": "회원-017",
-      "affiliation": "미소속",
-      "body": "첨부 놓쳤다 ㄳ"
-    }
-  ],
-  "community-018": [
-    {
-      "hero": "댓글회원-17-0",
-      "affiliation": "블루헤이븐",
-      "body": "가격 물어보는사람 진짜많음"
-    },
-    {
-      "hero": "댓글회원-17-1",
-      "affiliation": "서광",
-      "body": "일단 비싸보이면 넥시온거라고함"
-    },
-    {
-      "hero": "회원-018",
-      "affiliation": "넥시온",
-      "body": "내 장갑은 보급품임"
-    }
-  ],
-  "community-019": [
-    {
-      "hero": "댓글회원-18-0",
-      "affiliation": "도원",
-      "body": "다른각도면 새영상되는줄앎"
-    },
-    {
-      "hero": "댓글회원-18-1",
-      "affiliation": "라스트라인",
-      "body": "개인얼굴 캡처해서 닮았다고 올리는건 더별로"
-    },
-    {
-      "hero": "회원-019",
-      "affiliation": "SSA · 현장대응과",
-      "body": "그거 때문에 아무상관없는사람만 피해봄"
-    }
-  ],
-  "community-020": [
-    {
-      "hero": "댓글회원-19-0",
-      "affiliation": "해오름",
-      "body": "비공개는 공개를 안하는거"
-    },
-    {
-      "hero": "댓글회원-19-1",
-      "affiliation": "미소속",
-      "body": "자료실에 표기기준 있던데 그거봐"
-    },
-    {
-      "hero": "회원-020",
-      "affiliation": "태림",
-      "body": "찾음 내가 그냥 섞어읽은거네"
-    }
-  ],
-  "community-021": [
-    {
-      "hero": "댓글회원-20-0",
-      "affiliation": "미소속",
-      "body": "제목 비슷하면 첨부도 잘못받음"
-    },
-    {
-      "hero": "댓글회원-20-1",
-      "affiliation": "SSA · 현장대응과",
-      "body": "작은거같은데 이런게 편함"
-    },
-    {
-      "hero": "회원-021",
-      "affiliation": "도원",
-      "body": "지난회차꺼 출력한적 있어서 더반갑다"
-    }
-  ],
-  "community-022": [
-    {
-      "hero": "댓글회원-21-0",
-      "affiliation": "SSA · 현장대응과",
-      "body": "쉴때 사건이 있어야되나"
-    },
-    {
-      "hero": "댓글회원-21-1",
-      "affiliation": "블루헤이븐",
-      "body": "잔영은 그냥 날짜만 적는데"
-    },
-    {
-      "hero": "회원-022",
-      "affiliation": "태림",
-      "body": "부럽다 길드보다 담당자차이도 있겠지"
-    }
-  ],
-  "community-023": [
-    {
-      "hero": "댓글회원-22-0",
-      "affiliation": "서광",
-      "body": "지급품이랑 개인꺼 구분해둬"
-    },
-    {
-      "hero": "댓글회원-22-1",
-      "affiliation": "태림",
-      "body": "반납할때 받은상태 기록도 있으면 편함"
-    },
-    {
-      "hero": "회원-023",
-      "affiliation": "미소속",
-      "body": "ㅇㅇ 내꺼만 잘챙겨도 일이줄듯"
-    }
-  ],
-  "community-024": [
-    {
-      "hero": "댓글회원-23-0",
-      "affiliation": "태림",
-      "body": "제일 한가한사람이 메뉴정하는 구조"
-    },
-    {
-      "hero": "댓글회원-23-1",
-      "affiliation": "잔영",
-      "body": "오늘도 돈까스임?"
-    },
-    {
-      "hero": "회원-024",
-      "affiliation": "SSA · 운영지원과",
-      "body": "맞다 어떻게알았냐"
-    }
-  ],
-  "community-025": [
-    {
-      "hero": "댓글회원-24-0",
-      "affiliation": "태림",
-      "body": "그거 생각보다 체력많이씀"
-    },
-    {
-      "hero": "댓글회원-24-1",
-      "affiliation": "한가람",
-      "body": "당연히 할일이라고해도 잘한건 잘한거지"
-    },
-    {
-      "hero": "회원-025",
-      "affiliation": "한가람",
-      "body": "ㅇㅇ 그냥 고맙다고 얘기하고싶었음"
-    }
-  ],
-  "community-026": [
-    {
-      "hero": "댓글회원-25-0",
-      "affiliation": "서광",
-      "body": "본부주소랑 출동경험이랑 뭔상관"
-    },
-    {
-      "hero": "댓글회원-25-1",
-      "affiliation": "미소속",
-      "body": "소형이라고 동네일만 하는줄아는사람도있음"
-    },
-    {
-      "hero": "회원-026",
-      "affiliation": "미소속",
-      "body": "현장에서 소속 크기로 판단좀안했으면"
-    }
-  ],
-  "community-027": [
-    {
-      "hero": "댓글회원-26-0",
-      "affiliation": "미소속",
-      "body": "전달받은 시각이랑 출처 남겨"
-    },
-    {
-      "hero": "댓글회원-26-1",
-      "affiliation": "SSA · 현장대응과",
-      "body": "직접본거랑 같은칸에 확정으로쓰면 나중에 꼬임"
-    },
-    {
-      "hero": "회원-027",
-      "affiliation": "노스윈드",
-      "body": "ㅇㅇ 구분해서 보완할게"
-    }
-  ],
-  "community-028": [
-    {
-      "hero": "댓글회원-27-0",
-      "affiliation": "SSA · 현장대응과",
-      "body": "마지막줄 왜불안하냐"
-    },
-    {
-      "hero": "댓글회원-27-1",
-      "affiliation": "라스트라인",
-      "body": "그런 아이디어 주지마ㅋㅋ"
-    },
-    {
-      "hero": "회원-028",
-      "affiliation": "넥시온",
-      "body": "그분들은 이미 생각해봤을듯"
-    }
-  ],
-  "community-029": [
-    {
-      "hero": "댓글회원-28-0",
-      "affiliation": "블루헤이븐",
-      "body": "질문 막아놓고 사고나면 왜안물었대"
-    },
-    {
-      "hero": "댓글회원-28-1",
-      "affiliation": "잔영",
-      "body": "옆에서 듣는 나도 질문하기싫어짐"
-    },
-    {
-      "hero": "회원-029",
-      "affiliation": "라스트라인",
-      "body": "틀리게알고 움직이는거보단 물어보는게낫지"
-    }
-  ],
-  "community-030": [
-    {
-      "hero": "댓글회원-29-0",
-      "affiliation": "도원",
-      "body": "등록 담당자 기준부터확인해"
-    },
-    {
-      "hero": "댓글회원-29-1",
-      "affiliation": "서광",
-      "body": "장비 착용사진이랑 등록사진 따로받는경우도있음"
-    },
-    {
-      "hero": "회원-030",
-      "affiliation": "미소속",
-      "body": "문의넣음 아침에 답오겠지"
-    }
-  ],
-  "community-031": [
-    {
-      "hero": "댓글회원-30-0",
-      "affiliation": "라스트라인",
-      "body": "필요한자료 한번에 말해주는분 귀함"
-    },
-    {
-      "hero": "댓글회원-30-1",
-      "affiliation": "넥시온",
-      "body": "누구냐고 묻진말자 괜히 연락몰림"
-    },
-    {
-      "hero": "회원-031",
-      "affiliation": "미소속",
-      "body": "ㅇㅇ 이름안쓸게 그냥 ㄳ라고"
-    }
-  ],
-  "community-032": [
-    {
-      "hero": "댓글회원-31-0",
-      "affiliation": "넥시온",
-      "body": "바나나라도 좀"
-    },
-    {
-      "hero": "댓글회원-31-1",
-      "affiliation": "미소속",
-      "body": "우리팀은 컵죽 쌓아둠"
-    },
-    {
-      "hero": "회원-032",
-      "affiliation": "라스트라인",
-      "body": "그거 건의해야겠다"
-    }
-  ],
-  "community-033": [
-    {
-      "hero": "댓글회원-32-0",
-      "affiliation": "미소속",
-      "body": "자율이 상대편까지 내맘대로는 아니지"
-    },
-    {
-      "hero": "댓글회원-32-1",
-      "affiliation": "SSA · 현장대응과",
-      "body": "담당자끼고 범위 한번맞춰봐"
-    },
-    {
-      "hero": "회원-033",
-      "affiliation": "해오름",
-      "body": "ㅇㅇ 사람자체는 나쁜건아닌데 피곤함"
-    }
-  ],
-  "community-034": [
-    {
-      "hero": "댓글회원-33-0",
-      "affiliation": "SSA · 현장대응과",
-      "body": "미소속은 식권되는지도매번물음"
-    },
-    {
-      "hero": "댓글회원-33-1",
-      "affiliation": "잔영",
-      "body": "댓글만으로도 추천리스트 하나나올듯"
-    },
-    {
-      "hero": "회원-034",
-      "affiliation": "태림",
-      "body": "일단 내일 메뉴부터알고싶다"
-    }
-  ],
-  "community-035": [
-    {
-      "hero": "댓글회원-34-0",
-      "affiliation": "해오름",
-      "body": "미확인 거래얘긴 안퍼오는게낫지"
-    },
-    {
-      "hero": "댓글회원-34-1",
-      "affiliation": "라스트라인",
-      "body": "인수확인하고 판매조건은 다른얘기잖아"
-    },
-    {
-      "hero": "회원-035",
-      "affiliation": "미소속",
-      "body": "ㅇㅇ 나도 그거섞어서 듣고있던듯"
-    }
-  ],
-  "community-036": [
-    {
-      "hero": "댓글회원-35-0",
-      "affiliation": "해오름",
-      "body": "제발 써놓은건 좀읽자"
-    },
-    {
-      "hero": "댓글회원-35-1",
-      "affiliation": "잔영",
-      "body": "기록은 쌓고 전화는 또하는거 진짜피곤"
-    },
-    {
-      "hero": "회원-036",
-      "affiliation": "SSA · 현장대응과",
-      "body": "오늘은 진짜 칭찬함"
-    }
-  ],
-  "free-talk-1": [
-    {
-      "hero": "토론회원-0-0",
-      "affiliation": "미소속",
-      "body": "우린 뒷정리하다 퇴근밀렸는데ㅋㅋ"
-    },
-    {
-      "hero": "토론회원-0-1",
-      "affiliation": "아르카디아",
-      "body": "이름이 신기한거랑 범죄가 멋있는건 다르지"
-    }
-  ],
-  "free-talk-2": [
-    {
-      "hero": "토론회원-1-0",
-      "affiliation": "미소속",
-      "body": "막상 통제선 앞에서 그래도웃을수있나"
-    },
-    {
-      "hero": "토론회원-1-1",
-      "affiliation": "한가람",
-      "body": "외형얘기보다 목격보고 기준부터읽었으면"
-    }
-  ],
-  "free-talk-3": [
-    {
-      "hero": "토론회원-2-0",
-      "affiliation": "미소속",
-      "body": "시민들 고맙다는말 들으면 또마음약해짐"
-    },
-    {
-      "hero": "토론회원-2-1",
-      "affiliation": "잔영",
-      "body": "그래도 돈얘기는 해야지 둘다받자"
-    }
-  ],
-  "free-talk-4": [
-    {
-      "hero": "토론회원-3-0",
-      "affiliation": "미소속",
-      "body": "퇴근한뒤면 따로 근무로잡아야지"
-    },
-    {
-      "hero": "토론회원-3-1",
-      "affiliation": "태림",
-      "body": "현장사진보다 재촬영시간이 더길때있음"
-    }
-  ],
-  "free-talk-5": [
-    {
-      "hero": "토론회원-4-0",
-      "affiliation": "미소속",
-      "body": "수익으로잡히는건 유난히빠름"
-    },
-    {
-      "hero": "토론회원-4-1",
-      "affiliation": "해오름",
-      "body": "장갑교환은 그렇게빨리 안되던데"
-    }
-  ],
-  "free-talk-6": [
-    {
-      "hero": "토론회원-5-0",
-      "affiliation": "미소속",
-      "body": "양식 만든사람이 평생쓰는법칙"
-    },
-    {
-      "hero": "토론회원-5-1",
-      "affiliation": "넥시온",
-      "body": "작업시간도 업무로 남겨둬"
-    }
-  ],
-  "free-talk-7": [
-    {
-      "hero": "토론회원-6-0",
-      "affiliation": "미소속",
-      "body": "그래도 휴가때 안불렀으면 선방"
-    },
-    {
-      "hero": "토론회원-6-1",
-      "affiliation": "블루헤이븐",
-      "body": "설명서가 같이왔길 빌자"
-    }
-  ],
-  "free-talk-8": [
-    {
-      "hero": "토론회원-7-0",
-      "affiliation": "미소속",
-      "body": "그 십초뒤에 사람몇명이 붙어있는데"
-    },
-    {
-      "hero": "토론회원-7-1",
-      "affiliation": "아르카디아",
-      "body": "사람다안다친날이면 그래도 덜짜증남"
-    }
-  ],
-  "free-talk-9": [
-    {
-      "hero": "토론회원-8-0",
-      "affiliation": "미소속",
-      "body": "큰길드왔다고 현장자동으로아는것도아님"
-    },
-    {
-      "hero": "토론회원-8-1",
-      "affiliation": "서광",
-      "body": "한가람에서왔다니까 지역주민이냐고묻더라"
-    }
-  ],
-  "free-talk-10": [
-    {
-      "hero": "토론회원-9-0",
-      "affiliation": "미소속",
-      "body": "정정전꺼 남아있으면 더헷갈림"
-    },
-    {
-      "hero": "토론회원-9-1",
-      "affiliation": "도원",
-      "body": "최종본 하나로 다시올려달라고 해봐"
-    }
-  ]
-};
-
-communityPosts.push(...[
+    "replies": 1
+  },
   {
     "id": "community-extra-001",
     "category": "자유게시판",
@@ -1241,7 +504,7 @@ communityPosts.push(...[
     "hero": "현장회원-001",
     "affiliation": "넥시온",
     "created": "2026-10-31",
-    "replies": 3,
+    "replies": 2,
     "views": 92
   },
   {
@@ -1252,7 +515,7 @@ communityPosts.push(...[
     "hero": "현장회원-002",
     "affiliation": "넥시온",
     "created": "2026-10-25",
-    "replies": 3,
+    "replies": 1,
     "views": 285
   },
   {
@@ -1263,7 +526,7 @@ communityPosts.push(...[
     "hero": "현장회원-003",
     "affiliation": "서광",
     "created": "2026-10-19",
-    "replies": 3,
+    "replies": 1,
     "views": 478
   },
   {
@@ -1274,7 +537,7 @@ communityPosts.push(...[
     "hero": "현장회원-004",
     "affiliation": "해오름",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 1,
     "views": 671
   },
   {
@@ -1285,7 +548,7 @@ communityPosts.push(...[
     "hero": "현장회원-005",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-21",
-    "replies": 3,
+    "replies": 0,
     "views": 864
   },
   {
@@ -1296,7 +559,7 @@ communityPosts.push(...[
     "hero": "현장회원-006",
     "affiliation": "한가람",
     "created": "2026-10-29",
-    "replies": 3,
+    "replies": 7,
     "views": 1057
   },
   {
@@ -1307,7 +570,7 @@ communityPosts.push(...[
     "hero": "현장회원-007",
     "affiliation": "태림",
     "created": "2026-10-23",
-    "replies": 2,
+    "replies": 0,
     "views": 1250
   },
   {
@@ -1318,7 +581,7 @@ communityPosts.push(...[
     "hero": "현장회원-008",
     "affiliation": "해오름",
     "created": "2026-10-31",
-    "replies": 3,
+    "replies": 1,
     "views": 1443
   },
   {
@@ -1329,7 +592,7 @@ communityPosts.push(...[
     "hero": "현장회원-009",
     "affiliation": "도원",
     "created": "2026-10-25",
-    "replies": 2,
+    "replies": 1,
     "views": 1636
   },
   {
@@ -1351,7 +614,7 @@ communityPosts.push(...[
     "hero": "현장회원-011",
     "affiliation": "해오름",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 2,
     "views": 122
   },
   {
@@ -1373,7 +636,7 @@ communityPosts.push(...[
     "hero": "현장회원-013",
     "affiliation": "넥시온",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 0,
     "views": 508
   },
   {
@@ -1384,7 +647,7 @@ communityPosts.push(...[
     "hero": "현장회원-014",
     "affiliation": "도원",
     "created": "2026-10-21",
-    "replies": 2,
+    "replies": 0,
     "views": 701
   },
   {
@@ -1395,7 +658,7 @@ communityPosts.push(...[
     "hero": "현장회원-015",
     "affiliation": "잔영",
     "created": "2026-10-29",
-    "replies": 3,
+    "replies": 1,
     "views": 894
   },
   {
@@ -1406,7 +669,7 @@ communityPosts.push(...[
     "hero": "현장회원-016",
     "affiliation": "해오름",
     "created": "2026-10-23",
-    "replies": 2,
+    "replies": 1,
     "views": 1087
   },
   {
@@ -1417,7 +680,7 @@ communityPosts.push(...[
     "hero": "현장회원-017",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-31",
-    "replies": 3,
+    "replies": 1,
     "views": 1280
   },
   {
@@ -1428,7 +691,7 @@ communityPosts.push(...[
     "hero": "현장회원-018",
     "affiliation": "한가람",
     "created": "2026-10-25",
-    "replies": 2,
+    "replies": 1,
     "views": 1473
   },
   {
@@ -1439,7 +702,7 @@ communityPosts.push(...[
     "hero": "현장회원-019",
     "affiliation": "태림",
     "created": "2026-10-19",
-    "replies": 2,
+    "replies": 1,
     "views": 1666
   },
   {
@@ -1450,7 +713,7 @@ communityPosts.push(...[
     "hero": "현장회원-020",
     "affiliation": "넥시온",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 1,
     "views": 1859
   },
   {
@@ -1461,7 +724,7 @@ communityPosts.push(...[
     "hero": "현장회원-021",
     "affiliation": "도원",
     "created": "2026-10-21",
-    "replies": 2,
+    "replies": 1,
     "views": 152
   },
   {
@@ -1472,7 +735,7 @@ communityPosts.push(...[
     "hero": "현장회원-022",
     "affiliation": "잔영",
     "created": "2026-10-29",
-    "replies": 3,
+    "replies": 2,
     "views": 345
   },
   {
@@ -1494,7 +757,7 @@ communityPosts.push(...[
     "hero": "현장회원-024",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-31",
-    "replies": 3,
+    "replies": 0,
     "views": 731
   },
   {
@@ -1516,7 +779,7 @@ communityPosts.push(...[
     "hero": "현장회원-026",
     "affiliation": "도원",
     "created": "2026-10-31",
-    "replies": 2,
+    "replies": 0,
     "views": 1117
   },
   {
@@ -1527,7 +790,7 @@ communityPosts.push(...[
     "hero": "현장회원-027",
     "affiliation": "넥시온",
     "created": "2026-10-25",
-    "replies": 2,
+    "replies": 0,
     "views": 1310
   },
   {
@@ -1538,7 +801,7 @@ communityPosts.push(...[
     "hero": "현장회원-028",
     "affiliation": "해오름",
     "created": "2026-10-19",
-    "replies": 3,
+    "replies": 1,
     "views": 1503
   },
   {
@@ -1549,7 +812,7 @@ communityPosts.push(...[
     "hero": "현장회원-029",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 0,
     "views": 1696
   },
   {
@@ -1571,7 +834,7 @@ communityPosts.push(...[
     "hero": "현장회원-031",
     "affiliation": "태림",
     "created": "2026-10-29",
-    "replies": 2,
+    "replies": 0,
     "views": 182
   },
   {
@@ -1593,7 +856,7 @@ communityPosts.push(...[
     "hero": "현장회원-033",
     "affiliation": "도원",
     "created": "2026-10-31",
-    "replies": 3,
+    "replies": 2,
     "views": 568
   },
   {
@@ -1604,7 +867,7 @@ communityPosts.push(...[
     "hero": "현장회원-034",
     "affiliation": "잔영",
     "created": "2026-10-25",
-    "replies": 2,
+    "replies": 1,
     "views": 761
   },
   {
@@ -1615,7 +878,7 @@ communityPosts.push(...[
     "hero": "현장회원-035",
     "affiliation": "해오름",
     "created": "2026-10-19",
-    "replies": 3,
+    "replies": 1,
     "views": 954
   },
   {
@@ -1626,7 +889,7 @@ communityPosts.push(...[
     "hero": "현장회원-036",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-27",
-    "replies": 2,
+    "replies": 0,
     "views": 1147
   },
   {
@@ -1637,7 +900,7 @@ communityPosts.push(...[
     "hero": "현장회원-037",
     "affiliation": "넥시온",
     "created": "2026-10-19",
-    "replies": 2,
+    "replies": 1,
     "views": 1340
   },
   {
@@ -1648,7 +911,7 @@ communityPosts.push(...[
     "hero": "현장회원-038",
     "affiliation": "도원",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 0,
     "views": 1533
   },
   {
@@ -1659,7 +922,7 @@ communityPosts.push(...[
     "hero": "현장회원-039",
     "affiliation": "잔영",
     "created": "2026-10-21",
-    "replies": 2,
+    "replies": 0,
     "views": 1726
   },
   {
@@ -1670,7 +933,7 @@ communityPosts.push(...[
     "hero": "현장회원-040",
     "affiliation": "해오름",
     "created": "2026-10-29",
-    "replies": 3,
+    "replies": 2,
     "views": 1919
   },
   {
@@ -1692,7 +955,7 @@ communityPosts.push(...[
     "hero": "현장회원-042",
     "affiliation": "한가람",
     "created": "2026-10-31",
-    "replies": 3,
+    "replies": 1,
     "views": 405
   },
   {
@@ -1703,7 +966,7 @@ communityPosts.push(...[
     "hero": "현장회원-043",
     "affiliation": "태림",
     "created": "2026-10-25",
-    "replies": 2,
+    "replies": 1,
     "views": 598
   },
   {
@@ -1714,7 +977,7 @@ communityPosts.push(...[
     "hero": "현장회원-044",
     "affiliation": "넥시온",
     "created": "2026-10-19",
-    "replies": 3,
+    "replies": 0,
     "views": 791
   },
   {
@@ -1725,7 +988,7 @@ communityPosts.push(...[
     "hero": "현장회원-045",
     "affiliation": "도원",
     "created": "2026-10-27",
-    "replies": 2,
+    "replies": 0,
     "views": 984
   },
   {
@@ -1736,7 +999,7 @@ communityPosts.push(...[
     "hero": "현장회원-046",
     "affiliation": "잔영",
     "created": "2026-10-21",
-    "replies": 2,
+    "replies": 0,
     "views": 1177
   },
   {
@@ -1758,7 +1021,7 @@ communityPosts.push(...[
     "hero": "현장회원-048",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-23",
-    "replies": 2,
+    "replies": 0,
     "views": 1563
   },
   {
@@ -1813,7 +1076,7 @@ communityPosts.push(...[
     "hero": "현장회원-053",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-19",
-    "replies": 2,
+    "replies": 0,
     "views": 628
   },
   {
@@ -1824,7 +1087,7 @@ communityPosts.push(...[
     "hero": "현장회원-054",
     "affiliation": "한가람",
     "created": "2026-10-27",
-    "replies": 2,
+    "replies": 0,
     "views": 821
   },
   {
@@ -1835,7 +1098,7 @@ communityPosts.push(...[
     "hero": "현장회원-055",
     "affiliation": "태림",
     "created": "2026-10-21",
-    "replies": 2,
+    "replies": 0,
     "views": 1014
   },
   {
@@ -1846,7 +1109,7 @@ communityPosts.push(...[
     "hero": "현장회원-056",
     "affiliation": "넥시온",
     "created": "2026-10-29",
-    "replies": 3,
+    "replies": 0,
     "views": 1207
   },
   {
@@ -1857,7 +1120,7 @@ communityPosts.push(...[
     "hero": "현장회원-057",
     "affiliation": "도원",
     "created": "2026-10-23",
-    "replies": 2,
+    "replies": 1,
     "views": 1400
   },
   {
@@ -1879,7 +1142,7 @@ communityPosts.push(...[
     "hero": "현장회원-059",
     "affiliation": "해오름",
     "created": "2026-10-25",
-    "replies": 2,
+    "replies": 0,
     "views": 1786
   },
   {
@@ -1890,7 +1153,7 @@ communityPosts.push(...[
     "hero": "현장회원-060",
     "affiliation": "SSA · 현장대응과",
     "created": "2026-10-19",
-    "replies": 2,
+    "replies": 0,
     "views": 1979
   },
   {
@@ -1901,7 +1164,7 @@ communityPosts.push(...[
     "hero": "현장회원-061",
     "affiliation": "넥시온",
     "created": "2026-10-25",
-    "replies": 3,
+    "replies": 0,
     "views": 272
   },
   {
@@ -1912,7 +1175,7 @@ communityPosts.push(...[
     "hero": "현장회원-062",
     "affiliation": "도원",
     "created": "2026-10-19",
-    "replies": 2,
+    "replies": 1,
     "views": 465
   },
   {
@@ -1923,7 +1186,7 @@ communityPosts.push(...[
     "hero": "현장회원-063",
     "affiliation": "잔영",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 0,
     "views": 658
   },
   {
@@ -1956,7 +1219,7 @@ communityPosts.push(...[
     "hero": "현장회원-066",
     "affiliation": "한가람",
     "created": "2026-10-23",
-    "replies": 2,
+    "replies": 0,
     "views": 1237
   },
   {
@@ -1978,7 +1241,7 @@ communityPosts.push(...[
     "hero": "현장회원-068",
     "affiliation": "넥시온",
     "created": "2026-10-25",
-    "replies": 3,
+    "replies": 0,
     "views": 1623
   },
   {
@@ -2000,7 +1263,7 @@ communityPosts.push(...[
     "hero": "현장회원-070",
     "affiliation": "잔영",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 7,
     "views": 109
   },
   {
@@ -2011,7 +1274,7 @@ communityPosts.push(...[
     "hero": "현장회원-071",
     "affiliation": "해오름",
     "created": "2026-10-21",
-    "replies": 2,
+    "replies": 0,
     "views": 302
   },
   {
@@ -2033,7 +1296,7 @@ communityPosts.push(...[
     "hero": "현장회원-073",
     "affiliation": "넥시온",
     "created": "2026-10-21",
-    "replies": 3,
+    "replies": 8,
     "views": 688
   },
   {
@@ -2044,7 +1307,7 @@ communityPosts.push(...[
     "hero": "현장회원-074",
     "affiliation": "서광",
     "created": "2026-10-29",
-    "replies": 3,
+    "replies": 1,
     "views": 881
   },
   {
@@ -2055,7 +1318,7 @@ communityPosts.push(...[
     "hero": "현장회원-075",
     "affiliation": "해오름",
     "created": "2026-10-23",
-    "replies": 3,
+    "replies": 6,
     "views": 1074
   },
   {
@@ -2066,7 +1329,7 @@ communityPosts.push(...[
     "hero": "현장회원-076",
     "affiliation": "태림",
     "created": "2026-10-31",
-    "replies": 3,
+    "replies": 0,
     "views": 1267
   },
   {
@@ -2077,7 +1340,7 @@ communityPosts.push(...[
     "hero": "현장회원-077",
     "affiliation": "아르카디아",
     "created": "2026-10-25",
-    "replies": 2,
+    "replies": 1,
     "views": 1460
   },
   {
@@ -2099,7 +1362,7 @@ communityPosts.push(...[
     "hero": "현장회원-079",
     "affiliation": "블루헤이븐",
     "created": "2026-10-27",
-    "replies": 3,
+    "replies": 0,
     "views": 1846
   },
   {
@@ -2110,7 +1373,7 @@ communityPosts.push(...[
     "hero": "현장회원-080",
     "affiliation": "잔영",
     "created": "2026-10-21",
-    "replies": 3,
+    "replies": 1,
     "views": 139
   },
   {
@@ -2121,7 +1384,7 @@ communityPosts.push(...[
     "hero": "현장회원-081",
     "affiliation": "해오름",
     "created": "2026-10-29",
-    "replies": 3,
+    "replies": 1,
     "views": 332
   },
   {
@@ -2132,7 +1395,7 @@ communityPosts.push(...[
     "hero": "현장회원-082",
     "affiliation": "넥시온",
     "created": "2026-10-23",
-    "replies": 3,
+    "replies": 1,
     "views": 525
   },
   {
@@ -2143,7 +1406,7 @@ communityPosts.push(...[
     "hero": "현장회원-083",
     "affiliation": "잔영",
     "created": "2026-10-31",
-    "replies": 2,
+    "replies": 0,
     "views": 718
   },
   {
@@ -2154,11 +1417,307 @@ communityPosts.push(...[
     "hero": "현장회원-084",
     "affiliation": "노스윈드",
     "created": "2026-10-25",
-    "replies": 3,
+    "replies": 0,
     "views": 911
   }
-]);
-Object.assign(communityComments,{
+];
+export const communityComments:Record<string,{hero:string;affiliation:string;body:string;parent?:string}[]>={
+  "community-001": [],
+  "community-002": [
+    {
+      "hero": "댓글회원-1-0",
+      "affiliation": "넥시온",
+      "body": "의자에 앉아있던 기억만 있음"
+    },
+    {
+      "hero": "댓글회원-1-1",
+      "affiliation": "미소속",
+      "body": "교육시간 의견 받는 공지 올라옴 거기 써봐"
+    }
+  ],
+  "community-003": [
+    {
+      "hero": "댓글회원-2-0",
+      "affiliation": "미소속",
+      "body": "접촉이력 먼저 말하고 예약잡아"
+    },
+    {
+      "hero": "댓글회원-2-1",
+      "affiliation": "SSA · 현장대응과",
+      "body": "장비 종류마다 받는곳 다르더라 등록 창구에 물어봐"
+    }
+  ],
+  "community-004": [
+    {
+      "hero": "댓글회원-3-0",
+      "affiliation": "SSA · 현장대응과",
+      "body": "우리도 표지 고치다가 점심지남"
+    }
+  ],
+  "community-005": [
+    {
+      "hero": "댓글회원-4-0",
+      "affiliation": "태림",
+      "body": "그 두개 합쳐쓰면 뒤에서 계속 전화옴"
+    }
+  ],
+  "community-006": [],
+  "community-007": [
+    {
+      "hero": "댓글회원-6-0",
+      "affiliation": "잔영",
+      "body": "이거 길드 계약이랑 현장 인계 둘다봐야됨"
+    }
+  ],
+  "community-008": [],
+  "community-009": [],
+  "community-010": [
+    {
+      "hero": "댓글회원-9-0",
+      "affiliation": "SSA · 현장대응과",
+      "body": "담당자마다 차이는 있는데 신청은 편함"
+    }
+  ],
+  "community-011": [
+    {
+      "hero": "댓글회원-10-0",
+      "affiliation": "태림",
+      "body": "못들었으면 다시물어봐 제발"
+    }
+  ],
+  "community-012": [
+    {
+      "hero": "댓글회원-11-0",
+      "affiliation": "도원",
+      "body": "기상도 근무습관됨"
+    },
+    {
+      "hero": "댓글회원-11-1",
+      "affiliation": "잔영",
+      "body": "일단 먹고다시자"
+    }
+  ],
+  "community-013": [
+    {
+      "hero": "댓글회원-12-0",
+      "affiliation": "태림",
+      "body": "소속보고 전직원 연구원인줄아나"
+    },
+    {
+      "hero": "댓글회원-12-1",
+      "affiliation": "아르카디아",
+      "body": "우리도 지급품 이름 겨우외움"
+    }
+  ],
+  "community-014": [],
+  "community-015": [
+    {
+      "hero": "댓글회원-14-0",
+      "affiliation": "미소속",
+      "body": "미소속이라고 경력도 없는줄암"
+    },
+    {
+      "hero": "댓글회원-14-1",
+      "affiliation": "SSA · 현장대응과",
+      "body": "직속이든 길드든 할일 확인이 먼저지"
+    },
+    {
+      "hero": "회원-015",
+      "affiliation": "미소속",
+      "body": "ㅇㅇ 짧게 끝나서 더좋았음"
+    }
+  ],
+  "community-016": [],
+  "community-017": [],
+  "community-018": [
+    {
+      "hero": "댓글회원-17-0",
+      "affiliation": "블루헤이븐",
+      "body": "가격 물어보는사람 진짜많음"
+    }
+  ],
+  "community-019": [],
+  "community-020": [
+    {
+      "hero": "댓글회원-19-0",
+      "affiliation": "해오름",
+      "body": "비공개는 공개를 안하는거"
+    },
+    {
+      "hero": "댓글회원-19-1",
+      "affiliation": "미소속",
+      "body": "자료실에 표기기준 있던데 그거봐"
+    }
+  ],
+  "community-021": [
+    {
+      "hero": "댓글회원-20-0",
+      "affiliation": "미소속",
+      "body": "제목 비슷하면 첨부도 잘못받음"
+    },
+    {
+      "hero": "댓글회원-20-1",
+      "affiliation": "SSA · 현장대응과",
+      "body": "작은거같은데 이런게 편함"
+    }
+  ],
+  "community-022": [
+    {
+      "hero": "댓글회원-21-0",
+      "affiliation": "SSA · 현장대응과",
+      "body": "쉴때 사건이 있어야되나"
+    },
+    {
+      "hero": "댓글회원-21-1",
+      "affiliation": "블루헤이븐",
+      "body": "잔영은 그냥 날짜만 적는데"
+    },
+    {
+      "hero": "회원-022",
+      "affiliation": "태림",
+      "body": "부럽다 길드보다 담당자차이도 있겠지"
+    }
+  ],
+  "community-023": [],
+  "community-024": [],
+  "community-025": [
+    {
+      "hero": "댓글회원-24-0",
+      "affiliation": "태림",
+      "body": "그거 생각보다 체력많이씀"
+    }
+  ],
+  "community-026": [
+    {
+      "hero": "댓글회원-25-0",
+      "affiliation": "서광",
+      "body": "본부주소랑 출동경험이랑 뭔상관"
+    }
+  ],
+  "community-027": [
+    {
+      "hero": "댓글회원-26-0",
+      "affiliation": "미소속",
+      "body": "전달받은 시각이랑 출처 남겨"
+    }
+  ],
+  "community-028": [
+    {
+      "hero": "댓글회원-27-0",
+      "affiliation": "SSA · 현장대응과",
+      "body": "마지막줄 왜불안하냐"
+    }
+  ],
+  "community-029": [],
+  "community-030": [
+    {
+      "hero": "댓글회원-29-0",
+      "affiliation": "도원",
+      "body": "등록 담당자 기준부터확인해"
+    },
+    {
+      "hero": "댓글회원-29-1",
+      "affiliation": "서광",
+      "body": "장비 착용사진이랑 등록사진 따로받는경우도있음"
+    }
+  ],
+  "community-031": [
+    {
+      "hero": "댓글회원-30-0",
+      "affiliation": "라스트라인",
+      "body": "필요한자료 한번에 말해주는분 귀함"
+    },
+    {
+      "hero": "댓글회원-30-1",
+      "affiliation": "넥시온",
+      "body": "누구냐고 묻진말자 괜히 연락몰림"
+    }
+  ],
+  "community-032": [
+    {
+      "hero": "댓글회원-31-0",
+      "affiliation": "넥시온",
+      "body": "바나나라도 좀"
+    }
+  ],
+  "community-033": [
+    {
+      "hero": "댓글회원-32-0",
+      "affiliation": "미소속",
+      "body": "자율이 상대편까지 내맘대로는 아니지"
+    }
+  ],
+  "community-034": [
+    {
+      "hero": "댓글회원-33-0",
+      "affiliation": "SSA · 현장대응과",
+      "body": "미소속은 식권되는지도매번물음"
+    }
+  ],
+  "community-035": [],
+  "community-036": [],
+  "free-talk-1": [],
+  "free-talk-2": [],
+  "free-talk-3": [],
+  "free-talk-4": [
+    {
+      "hero": "토론회원-3-0",
+      "affiliation": "미소속",
+      "body": "퇴근한뒤면 따로 근무로잡아야지"
+    }
+  ],
+  "free-talk-5": [
+    {
+      "hero": "토론회원-4-0",
+      "affiliation": "미소속",
+      "body": "수익으로잡히는건 유난히빠름"
+    }
+  ],
+  "free-talk-6": [
+    {
+      "hero": "토론회원-5-0",
+      "affiliation": "미소속",
+      "body": "양식 만든사람이 평생쓰는법칙"
+    },
+    {
+      "hero": "토론회원-5-1",
+      "affiliation": "넥시온",
+      "body": "작업시간도 업무로 남겨둬"
+    }
+  ],
+  "free-talk-7": [
+    {
+      "hero": "토론회원-6-0",
+      "affiliation": "미소속",
+      "body": "그래도 휴가때 안불렀으면 선방"
+    },
+    {
+      "hero": "토론회원-6-1",
+      "affiliation": "블루헤이븐",
+      "body": "설명서가 같이왔길 빌자"
+    }
+  ],
+  "free-talk-8": [
+    {
+      "hero": "토론회원-7-0",
+      "affiliation": "미소속",
+      "body": "그 십초뒤에 사람몇명이 붙어있는데"
+    }
+  ],
+  "free-talk-9": [
+    {
+      "hero": "토론회원-8-0",
+      "affiliation": "미소속",
+      "body": "큰길드왔다고 현장자동으로아는것도아님"
+    }
+  ],
+  "free-talk-10": [
+    {
+      "hero": "토론회원-9-0",
+      "affiliation": "미소속",
+      "body": "정정전꺼 남아있으면 더헷갈림"
+    }
+  ],
   "community-extra-001": [
     {
       "hero": "대화회원-1-1",
@@ -2169,11 +1728,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-1-2",
       "affiliation": "잔영",
       "body": "그말이면 설명끝나는게 제일편한가봄"
-    },
-    {
-      "hero": "현장회원-001",
-      "affiliation": "넥시온",
-      "body": "일단 항목별로 문의는 넣어놨음"
     }
   ],
   "community-extra-002": [
@@ -2181,16 +1735,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-2-1",
       "affiliation": "태림",
       "body": "빠르게 들어오는거랑 알기쉽게 들어오는건 별개ㅋㅋ"
-    },
-    {
-      "hero": "대화회원-2-2",
-      "affiliation": "라스트라인",
-      "body": "나도 이번달 정산조정의 조정 받음"
-    },
-    {
-      "hero": "현장회원-002",
-      "affiliation": "넥시온",
-      "body": "아 그거 나만있는칸 아니었구나"
     }
   ],
   "community-extra-003": [
@@ -2198,16 +1742,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-3-1",
       "affiliation": "노스윈드",
       "body": "전통 지키는거랑 처우말하는거랑 무슨상관"
-    },
-    {
-      "hero": "대화회원-3-2",
-      "affiliation": "SSA · 현장대응과",
-      "body": "우리도 그랬는데 요즘은 그냥 다들 말함"
-    },
-    {
-      "hero": "현장회원-003",
-      "affiliation": "서광",
-      "body": "나도 이제 돌려말안하려고"
     }
   ],
   "community-extra-004": [
@@ -2215,35 +1749,9 @@ Object.assign(communityComments,{
       "hero": "대화회원-4-1",
       "affiliation": "도원",
       "body": "복귀때도 업무시키면서 그건빼는거 웃김"
-    },
-    {
-      "hero": "대화회원-4-2",
-      "affiliation": "서광",
-      "body": "길드마다 달라서 계약이랑 기록 둘다봐야함"
-    },
-    {
-      "hero": "현장회원-004",
-      "affiliation": "해오름",
-      "body": "같은길드도 담당자마다 말이다름 그게문제"
     }
   ],
-  "community-extra-005": [
-    {
-      "hero": "대화회원-5-1",
-      "affiliation": "SSA · 장비지원과",
-      "body": "정산 담당창구 따로있는지부터 확인해봐"
-    },
-    {
-      "hero": "대화회원-5-2",
-      "affiliation": "태림",
-      "body": "기다리라는말 말고 어디서멈췄는지 알려줬으면"
-    },
-    {
-      "hero": "현장회원-005",
-      "affiliation": "SSA · 현장대응과",
-      "body": "지금은 접수번호받고 그걸로만 문의중"
-    }
-  ],
+  "community-extra-005": [],
   "community-extra-006": [
     {
       "hero": "대화회원-6-1",
@@ -2259,35 +1767,34 @@ Object.assign(communityComments,{
       "hero": "현장회원-006",
       "affiliation": "한가람",
       "body": "맞아 팀원욕하는글아님 정산기준얘기임"
-    }
-  ],
-  "community-extra-007": [
-    {
-      "hero": "대화회원-7-1",
-      "affiliation": "블루헤이븐",
-      "body": "입금알림으로 월급추리하기"
     },
     {
-      "hero": "대화회원-7-2",
-      "affiliation": "도원",
-      "body": "명세서 나오면 정정신청기한은 또짧음"
+      "hero": "토론참여-community-extra-006-0",
+      "affiliation": "넥시온",
+      "body": "직접제압 가산이랑 지원업무 평가는 분리해야됨 같은항목으로보니까싸우지"
+    },
+    {
+      "hero": "토론참여-community-extra-006-1",
+      "affiliation": "서광",
+      "body": "그럼 분리한쪽도 납득할 기준을주면되는거임"
+    },
+    {
+      "hero": "토론참여-community-extra-006-2",
+      "affiliation": "미소속",
+      "body": "현장끝나고 누가뭐했는지 기록은 남는데 정산표엔 왜사라지냐"
+    },
+    {
+      "hero": "토론참여-community-extra-006-3",
+      "affiliation": "해오름",
+      "body": "팀기여 먼저보고 추가항목붙이는쪽이 덜싸우긴함"
     }
   ],
+  "community-extra-007": [],
   "community-extra-008": [
     {
       "hero": "대화회원-8-1",
       "affiliation": "한가람",
       "body": "쉬는날 쓸거로써 근무관련말고ㅋㅋ"
-    },
-    {
-      "hero": "대화회원-8-2",
-      "affiliation": "SSA · 장비지원과",
-      "body": "휴무때 쓸거 생각하는것부터 복지같네"
-    },
-    {
-      "hero": "현장회원-008",
-      "affiliation": "해오름",
-      "body": "그럼 이번엔 책이나사야겠다"
     }
   ],
   "community-extra-009": [
@@ -2295,11 +1802,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-9-1",
       "affiliation": "미소속",
       "body": "평균이라는말만 믿으면안됨"
-    },
-    {
-      "hero": "대화회원-9-2",
-      "affiliation": "해오름",
-      "body": "모집때 고정이랑 변동분리해서 써줬으면"
     }
   ],
   "community-extra-010": [
@@ -2324,11 +1826,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-11-2",
       "affiliation": "한가람",
       "body": "그건 진짜 어이없네 평가항목부터봐봐"
-    },
-    {
-      "hero": "현장회원-011",
-      "affiliation": "해오름",
-      "body": "현장평가는 괜찮았음 그래서 더어이없음"
     }
   ],
   "community-extra-012": [
@@ -2348,50 +1845,13 @@ Object.assign(communityComments,{
       "body": "ㅇㅇ 당장옮긴다는건아님 오늘너무피곤해서"
     }
   ],
-  "community-extra-013": [
-    {
-      "hero": "대화회원-13-1",
-      "affiliation": "라스트라인",
-      "body": "판매대금이랑 성과급 계산같은건아니긴함"
-    },
-    {
-      "hero": "대화회원-13-2",
-      "affiliation": "넥시온",
-      "body": "알지 근데 설명이없으니까 답답한거지"
-    },
-    {
-      "hero": "현장회원-013",
-      "affiliation": "넥시온",
-      "body": "ㅇㅇ 많이팔았으니 다달라는게 아니라 기준을달라는거"
-    }
-  ],
-  "community-extra-014": [
-    {
-      "hero": "대화회원-14-1",
-      "affiliation": "SSA · 현장대응과",
-      "body": "매일하니까 그런거지ㅋㅋ"
-    },
-    {
-      "hero": "대화회원-14-2",
-      "affiliation": "아르카디아",
-      "body": "전투보다 무서운게 엑셀빠른사람"
-    }
-  ],
+  "community-extra-013": [],
+  "community-extra-014": [],
   "community-extra-015": [
     {
       "hero": "대화회원-15-1",
       "affiliation": "서광",
       "body": "담당기관 바뀔때마다 설명처음부터함"
-    },
-    {
-      "hero": "대화회원-15-2",
-      "affiliation": "잔영",
-      "body": "인수랑 거래랑 지급이랑 따로라 더헷갈림"
-    },
-    {
-      "hero": "현장회원-015",
-      "affiliation": "잔영",
-      "body": "그래서 진행상태라도 보고싶다는거"
     }
   ],
   "community-extra-016": [
@@ -2399,11 +1859,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-16-1",
       "affiliation": "태림",
       "body": "직업이 식성까지건드네"
-    },
-    {
-      "hero": "대화회원-16-2",
-      "affiliation": "라스트라인",
-      "body": "일하다보면 괜찮다가 밥앞에서 생각남"
     }
   ],
   "community-extra-017": [
@@ -2411,16 +1866,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-17-1",
       "affiliation": "노스윈드",
       "body": "주워오면안되냐는말도 들어봄"
-    },
-    {
-      "hero": "대화회원-17-2",
-      "affiliation": "SSA · 현장대응과",
-      "body": "그말 농담이어도 듣는쪽은 안웃김"
-    },
-    {
-      "hero": "현장회원-017",
-      "affiliation": "SSA · 현장대응과",
-      "body": "나도 그냥 현장얘기안하기로함"
     }
   ],
   "community-extra-018": [
@@ -2428,11 +1873,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-18-1",
       "affiliation": "도원",
       "body": "단계가다른데 같은출근시간처럼봄"
-    },
-    {
-      "hero": "대화회원-18-2",
-      "affiliation": "서광",
-      "body": "어디서 기다리는지 사전에 공유해두면 그나마덜싸움"
     }
   ],
   "community-extra-019": [
@@ -2440,11 +1880,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-19-1",
       "affiliation": "SSA · 장비지원과",
       "body": "가치낮다랑 절차없다가 같은말인줄암"
-    },
-    {
-      "hero": "대화회원-19-2",
-      "affiliation": "태림",
-      "body": "외피쪽 쓰는곳도 많잖아 모르면조용히좀"
     }
   ],
   "community-extra-020": [
@@ -2452,16 +1887,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-20-1",
       "affiliation": "해오름",
       "body": "산업기사면 그런식으로쓰긴하지"
-    },
-    {
-      "hero": "대화회원-20-2",
-      "affiliation": "노스윈드",
-      "body": "그렇다고 현장이 저절로생긴건아닌데"
-    },
-    {
-      "hero": "현장회원-020",
-      "affiliation": "넥시온",
-      "body": "ㅇㅇ 그말임 내가 기자하겠단건아님"
     }
   ],
   "community-extra-021": [
@@ -2469,11 +1894,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-21-1",
       "affiliation": "블루헤이븐",
       "body": "자료실에도 그거 구분하라고 올라왔더라"
-    },
-    {
-      "hero": "대화회원-21-2",
-      "affiliation": "도원",
-      "body": "비싼재료썼다고 다좋은것도아닌데"
     }
   ],
   "community-extra-022": [
@@ -2486,11 +1906,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-22-2",
       "affiliation": "SSA · 장비지원과",
       "body": "대체담당 이름만있고 권한은없을때도있더라"
-    },
-    {
-      "hero": "현장회원-022",
-      "affiliation": "잔영",
-      "body": "맞아 창구는있는데 확인은 못해준대"
     }
   ],
   "community-extra-023": [
@@ -2505,23 +1920,7 @@ Object.assign(communityComments,{
       "body": "당사자아닌사람들이 확신은제일강함"
     }
   ],
-  "community-extra-024": [
-    {
-      "hero": "대화회원-24-1",
-      "affiliation": "넥시온",
-      "body": "능력명 대조필"
-    },
-    {
-      "hero": "대화회원-24-2",
-      "affiliation": "블루헤이븐",
-      "body": "그능력 생기면 전세계에서 부름"
-    },
-    {
-      "hero": "현장회원-024",
-      "affiliation": "SSA · 현장대응과",
-      "body": "취소할게 그건더못쉼"
-    }
-  ],
+  "community-extra-024": [],
   "community-extra-025": [
     {
       "hero": "대화회원-25-1",
@@ -2539,64 +1938,16 @@ Object.assign(communityComments,{
       "body": "사진은 내부로만보내볼게"
     }
   ],
-  "community-extra-026": [
-    {
-      "hero": "대화회원-26-1",
-      "affiliation": "잔영",
-      "body": "좋다는거랑 맞는거랑 다르지"
-    },
-    {
-      "hero": "대화회원-26-2",
-      "affiliation": "미소속",
-      "body": "난 구형 재고있냐고 물어봤는데 없대"
-    }
-  ],
-  "community-extra-027": [
-    {
-      "hero": "대화회원-27-1",
-      "affiliation": "라스트라인",
-      "body": "정작 본인도 어떻게생겼는지모르는부분있음ㅋㅋ"
-    },
-    {
-      "hero": "대화회원-27-2",
-      "affiliation": "넥시온",
-      "body": "남의장비에 손대는건 소속떠나서예의가아님"
-    }
-  ],
+  "community-extra-026": [],
+  "community-extra-027": [],
   "community-extra-028": [
     {
       "hero": "대화회원-28-1",
       "affiliation": "SSA · 현장대응과",
       "body": "점검이랑 지급판단이 섞이면 그렇더라"
-    },
-    {
-      "hero": "대화회원-28-2",
-      "affiliation": "아르카디아",
-      "body": "그럼 확인한사람이름이라도 기록남겨달라해봐"
-    },
-    {
-      "hero": "현장회원-028",
-      "affiliation": "해오름",
-      "body": "정식점검접수 다시넣었음 이번엔내용길게씀"
     }
   ],
-  "community-extra-029": [
-    {
-      "hero": "대화회원-29-1",
-      "affiliation": "서광",
-      "body": "귀모양안맞는거아님? 다른규격확인해봐"
-    },
-    {
-      "hero": "대화회원-29-2",
-      "affiliation": "잔영",
-      "body": "헬멧패드랑 같이봐야될수도"
-    },
-    {
-      "hero": "현장회원-029",
-      "affiliation": "SSA · 현장대응과",
-      "body": "ㅇㅇ 둘다지급품인데 같이쓰면안맞는거 어이없네"
-    }
-  ],
+  "community-extra-029": [],
   "community-extra-030": [
     {
       "hero": "대화회원-30-1",
@@ -2609,18 +1960,7 @@ Object.assign(communityComments,{
       "body": "사용흔적이랑 관리잘못한거는 구분해야지"
     }
   ],
-  "community-extra-031": [
-    {
-      "hero": "대화회원-31-1",
-      "affiliation": "노스윈드",
-      "body": "구분번호를앞에써주면끝인데"
-    },
-    {
-      "hero": "대화회원-31-2",
-      "affiliation": "SSA · 현장대응과",
-      "body": "담당자도 전화하면 잠깐만요부터함"
-    }
-  ],
+  "community-extra-031": [],
   "community-extra-032": [
     {
       "hero": "대화회원-32-1",
@@ -2643,11 +1983,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-33-2",
       "affiliation": "태림",
       "body": "합치면무겁다는걸 신청부서는 안느낌"
-    },
-    {
-      "hero": "현장회원-033",
-      "affiliation": "도원",
-      "body": "물병빼라는말들으면 화낼거임"
     }
   ],
   "community-extra-034": [
@@ -2655,11 +1990,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-34-1",
       "affiliation": "해오름",
       "body": "완료예정미정이랑 착수도미정이랑 느낌다르지"
-    },
-    {
-      "hero": "대화회원-34-2",
-      "affiliation": "노스윈드",
-      "body": "대체품도 같이물어봐 난그렇게받음"
     }
   ],
   "community-extra-035": [
@@ -2667,71 +1997,18 @@ Object.assign(communityComments,{
       "hero": "대화회원-35-1",
       "affiliation": "블루헤이븐",
       "body": "표시허용위치 장비실에물어봐"
-    },
-    {
-      "hero": "대화회원-35-2",
-      "affiliation": "도원",
-      "body": "점검표랑 연결되는번호만확실하면 편하긴함"
-    },
-    {
-      "hero": "현장회원-035",
-      "affiliation": "해오름",
-      "body": "일단 임의로더쓰진말아야겠다"
     }
   ],
-  "community-extra-036": [
-    {
-      "hero": "대화회원-36-1",
-      "affiliation": "한가람",
-      "body": "장비는 신형인데 순서는구형이네"
-    },
-    {
-      "hero": "대화회원-36-2",
-      "affiliation": "SSA · 장비지원과",
-      "body": "실사용검토 끝나고찍어도 안늦을텐데"
-    }
-  ],
+  "community-extra-036": [],
   "community-extra-037": [
     {
       "hero": "대화회원-37-1",
       "affiliation": "미소속",
       "body": "모발색만같으면 다잡아옴"
-    },
-    {
-      "hero": "대화회원-37-2",
-      "affiliation": "해오름",
-      "body": "진짜봤으면 여기서 투표받을게아니지"
     }
   ],
-  "community-extra-038": [
-    {
-      "hero": "대화회원-38-1",
-      "affiliation": "넥시온",
-      "body": "설명해주려다가 더피곤해서닫음"
-    },
-    {
-      "hero": "대화회원-38-2",
-      "affiliation": "블루헤이븐",
-      "body": "기사사진이랑 제목부터 그쪽으로뽑는것도있어"
-    },
-    {
-      "hero": "현장회원-038",
-      "affiliation": "도원",
-      "body": "그니까 보는사람만탓하기도 뭐하더라"
-    }
-  ],
-  "community-extra-039": [
-    {
-      "hero": "대화회원-39-1",
-      "affiliation": "아르카디아",
-      "body": "보기좋게잘린화면만보니까그런듯"
-    },
-    {
-      "hero": "대화회원-39-2",
-      "affiliation": "한가람",
-      "body": "위험물 관련기록도 안본사람들이 신나함"
-    }
-  ],
+  "community-extra-038": [],
+  "community-extra-039": [],
   "community-extra-040": [
     {
       "hero": "대화회원-40-1",
@@ -2742,11 +2019,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-40-2",
       "affiliation": "미소속",
       "body": "추적팀이랑 우리쪽연락이늦을때 더꼬임"
-    },
-    {
-      "hero": "현장회원-040",
-      "affiliation": "해오름",
-      "body": "걔네탓만이아니고 내부안내도 좀잘하란거"
     }
   ],
   "community-extra-041": [
@@ -2766,16 +2038,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-42-1",
       "affiliation": "SSA · 현장대응과",
       "body": "공개게시판엔 위치도막쓰면안되고"
-    },
-    {
-      "hero": "대화회원-42-2",
-      "affiliation": "아르카디아",
-      "body": "차라리 보고창구로보내는게맞음"
-    },
-    {
-      "hero": "현장회원-042",
-      "affiliation": "한가람",
-      "body": "ㅇㅇ 여기에세부사항쓰라는말아님"
     }
   ],
   "community-extra-043": [
@@ -2783,54 +2045,11 @@ Object.assign(communityComments,{
       "hero": "대화회원-43-1",
       "affiliation": "서광",
       "body": "장비쓴사람은 다수상해지는시대"
-    },
-    {
-      "hero": "대화회원-43-2",
-      "affiliation": "잔영",
-      "body": "민간인사진퍼오는건 진짜선넘음"
     }
   ],
-  "community-extra-044": [
-    {
-      "hero": "대화회원-44-1",
-      "affiliation": "태림",
-      "body": "영상원본날짜부터 틀릴때도있음"
-    },
-    {
-      "hero": "대화회원-44-2",
-      "affiliation": "라스트라인",
-      "body": "틀렸다고하면 기관이숨긴대ㅋㅋ"
-    },
-    {
-      "hero": "현장회원-044",
-      "affiliation": "넥시온",
-      "body": "공식공개범위밖은 모른다고하는게 그렇게어렵나"
-    }
-  ],
-  "community-extra-045": [
-    {
-      "hero": "대화회원-45-1",
-      "affiliation": "노스윈드",
-      "body": "단순식별이랑 감상문구분좀"
-    },
-    {
-      "hero": "대화회원-45-2",
-      "affiliation": "SSA · 현장대응과",
-      "body": "실제로마주쳤을때도 그렇게여유있을까"
-    }
-  ],
-  "community-extra-046": [
-    {
-      "hero": "대화회원-46-1",
-      "affiliation": "도원",
-      "body": "걔네가어디소속이냐고 자꾸물어보는데 모른다고"
-    },
-    {
-      "hero": "대화회원-46-2",
-      "affiliation": "서광",
-      "body": "이름이행정분류라는것도 잘안읽음"
-    }
-  ],
+  "community-extra-044": [],
+  "community-extra-045": [],
+  "community-extra-046": [],
   "community-extra-047": [
     {
       "hero": "대화회원-47-1",
@@ -2843,18 +2062,7 @@ Object.assign(communityComments,{
       "body": "장비좋아하는거랑 뭐든따라할수있는건 다른데"
     }
   ],
-  "community-extra-048": [
-    {
-      "hero": "대화회원-48-1",
-      "affiliation": "해오름",
-      "body": "출처없는얘기 붙는속도가제일빠름"
-    },
-    {
-      "hero": "대화회원-48-2",
-      "affiliation": "노스윈드",
-      "body": "누가만든말인지도모르는데 다들아는척함"
-    }
-  ],
+  "community-extra-048": [],
   "community-extra-049": [
     {
       "hero": "대화회원-49-1",
@@ -2903,69 +2111,15 @@ Object.assign(communityComments,{
       "body": "근거없이몇분남았다하는것보다 훨씬낫지"
     }
   ],
-  "community-extra-053": [
-    {
-      "hero": "대화회원-53-1",
-      "affiliation": "아르카디아",
-      "body": "급한건알겠는데 뒤에쉬는날도정해달라는거지"
-    },
-    {
-      "hero": "대화회원-53-2",
-      "affiliation": "한가람",
-      "body": "휴무미정이 제일피곤함"
-    }
-  ],
-  "community-extra-054": [
-    {
-      "hero": "대화회원-54-1",
-      "affiliation": "잔영",
-      "body": "장비정리도 업무시간인데 자꾸덤취급함"
-    },
-    {
-      "hero": "대화회원-54-2",
-      "affiliation": "미소속",
-      "body": "갈아입을양말 챙기라는말 이제몸으로앎"
-    }
-  ],
-  "community-extra-055": [
-    {
-      "hero": "대화회원-55-1",
-      "affiliation": "라스트라인",
-      "body": "구경하는사람많으면 안내소리도안들림"
-    },
-    {
-      "hero": "대화회원-55-2",
-      "affiliation": "넥시온",
-      "body": "사진한장때문에 다시돌아오는사람제일싫음"
-    }
-  ],
-  "community-extra-056": [
-    {
-      "hero": "대화회원-56-1",
-      "affiliation": "SSA · 현장대응과",
-      "body": "그런건안내담당을따로세워줬으면"
-    },
-    {
-      "hero": "대화회원-56-2",
-      "affiliation": "아르카디아",
-      "body": "통제맡은사람한테 모든질문이다옴"
-    },
-    {
-      "hero": "현장회원-056",
-      "affiliation": "넥시온",
-      "body": "설명자료짧게라도 통일해주면좋겠음"
-    }
-  ],
+  "community-extra-053": [],
+  "community-extra-054": [],
+  "community-extra-055": [],
+  "community-extra-056": [],
   "community-extra-057": [
     {
       "hero": "대화회원-57-1",
       "affiliation": "서광",
       "body": "피곤할때 기억력믿으면안됨"
-    },
-    {
-      "hero": "대화회원-57-2",
-      "affiliation": "잔영",
-      "body": "나도복귀후에쓴다해놓고 다음날후회함"
     }
   ],
   "community-extra-058": [
@@ -2980,76 +2134,17 @@ Object.assign(communityComments,{
       "body": "무슨일없을때 다하자는말이제일무서움"
     }
   ],
-  "community-extra-059": [
-    {
-      "hero": "대화회원-59-1",
-      "affiliation": "노스윈드",
-      "body": "확인시각이 달라서 꼬이는것도 줄었음"
-    },
-    {
-      "hero": "대화회원-59-2",
-      "affiliation": "SSA · 현장대응과",
-      "body": "정산양식도 이런식으로나눠줬으면"
-    }
-  ],
-  "community-extra-060": [
-    {
-      "hero": "대화회원-60-1",
-      "affiliation": "도원",
-      "body": "예측썰이 자꾸예보처럼돌아다님"
-    },
-    {
-      "hero": "대화회원-60-2",
-      "affiliation": "서광",
-      "body": "집에서걱정하는건알겠는데 매번설명하면힘들지"
-    }
-  ],
-  "community-extra-061": [
-    {
-      "hero": "대화회원-61-1",
-      "affiliation": "SSA · 장비지원과",
-      "body": "나도그건구분해줬으면좋겠음"
-    },
-    {
-      "hero": "대화회원-61-2",
-      "affiliation": "태림",
-      "body": "말못하는일있을수는있지 그걸다캐물을수도없고"
-    },
-    {
-      "hero": "현장회원-061",
-      "affiliation": "넥시온",
-      "body": "세부작전말고 내휴무변경이유만 제대로달라는거"
-    }
-  ],
+  "community-extra-059": [],
+  "community-extra-060": [],
+  "community-extra-061": [],
   "community-extra-062": [
     {
       "hero": "대화회원-62-1",
       "affiliation": "해오름",
       "body": "기간없으면 최소한 재검토시점이라도정해야지"
-    },
-    {
-      "hero": "대화회원-62-2",
-      "affiliation": "노스윈드",
-      "body": "이건소속마다 다르더라 우린 일정그대로감"
     }
   ],
-  "community-extra-063": [
-    {
-      "hero": "대화회원-63-1",
-      "affiliation": "블루헤이븐",
-      "body": "확인범위가다를수있으니 접수창구에물어봐"
-    },
-    {
-      "hero": "대화회원-63-2",
-      "affiliation": "도원",
-      "body": "여기다 원자료올리진말고"
-    },
-    {
-      "hero": "현장회원-063",
-      "affiliation": "잔영",
-      "body": "ㅇㅇ 당연히 자료공유하려는글은아님"
-    }
-  ],
+  "community-extra-063": [],
   "community-extra-064": [
     {
       "hero": "대화회원-64-1",
@@ -3074,18 +2169,7 @@ Object.assign(communityComments,{
       "body": "시민입장에선 급해보일수있는데 듣는사람도힘들지"
     }
   ],
-  "community-extra-066": [
-    {
-      "hero": "대화회원-66-1",
-      "affiliation": "넥시온",
-      "body": "외국어이름 겹치면 전부관계자됨"
-    },
-    {
-      "hero": "대화회원-66-2",
-      "affiliation": "블루헤이븐",
-      "body": "처음올린사람은 재미였겠지 나머진뭔죄"
-    }
-  ],
+  "community-extra-066": [],
   "community-extra-067": [
     {
       "hero": "대화회원-67-1",
@@ -3098,23 +2182,7 @@ Object.assign(communityComments,{
       "body": "그럴땐 공개공고보라고하고끝내"
     }
   ],
-  "community-extra-068": [
-    {
-      "hero": "대화회원-68-1",
-      "affiliation": "잔영",
-      "body": "진짜무슨연예인취급함"
-    },
-    {
-      "hero": "대화회원-68-2",
-      "affiliation": "미소속",
-      "body": "그정도면공식광고인지부터확인해봐"
-    },
-    {
-      "hero": "현장회원-068",
-      "affiliation": "넥시온",
-      "body": "일단 우리팀엔 검토자료없는걸로답했음"
-    }
-  ],
+  "community-extra-068": [],
   "community-extra-069": [
     {
       "hero": "대화회원-69-1",
@@ -3142,20 +2210,29 @@ Object.assign(communityComments,{
       "hero": "현장회원-070",
       "affiliation": "잔영",
       "body": "ㅇㅇ 현장인력입장에선 하나도안재밌음"
-    }
-  ],
-  "community-extra-071": [
-    {
-      "hero": "대화회원-71-1",
-      "affiliation": "서광",
-      "body": "그이름붙으면 다천재의작품인줄아나"
     },
     {
-      "hero": "대화회원-71-2",
-      "affiliation": "잔영",
-      "body": "비공식상품을 공인장비처럼쓰지만않았으면"
+      "hero": "토론참여-community-extra-070-0",
+      "affiliation": "서광",
+      "body": "성과따지는쪽 문제랑 사건을 팀응원처럼보는거랑은 다르지"
+    },
+    {
+      "hero": "토론참여-community-extra-070-1",
+      "affiliation": "넥시온",
+      "body": "현장직이 누가먼저점수따냐 이러고갈리없잖아 댓글얘기지"
+    },
+    {
+      "hero": "토론참여-community-extra-070-2",
+      "affiliation": "태림",
+      "body": "그걸진짜업무평가랑 섞어얘기하는사람이있으니까 피곤한거"
+    },
+    {
+      "hero": "토론참여-community-extra-070-3",
+      "affiliation": "미소속",
+      "body": "현장지원 맡은사람은 그와중에 또댓글에서빠짐"
     }
   ],
+  "community-extra-071": [],
   "community-extra-072": [
     {
       "hero": "대화회원-72-1",
@@ -3184,6 +2261,31 @@ Object.assign(communityComments,{
       "hero": "현장회원-073",
       "affiliation": "넥시온",
       "body": "서로 일얘기만했으면좋겠음 진짜"
+    },
+    {
+      "hero": "토론참여-community-extra-073-0",
+      "affiliation": "서광",
+      "body": "돈받고일하는거 누가모름 그런사람하나로 소속전체묶진말자"
+    },
+    {
+      "hero": "토론참여-community-extra-073-1",
+      "affiliation": "넥시온",
+      "body": "본문도 그말한사람 얘기하는거같은데"
+    },
+    {
+      "hero": "토론참여-community-extra-073-2",
+      "affiliation": "한가람",
+      "body": "둘다 똑같이 일반화해놓고 상대가하면화냄ㅋㅋ"
+    },
+    {
+      "hero": "토론참여-community-extra-073-3",
+      "affiliation": "서광",
+      "body": "일단 난 이번달급여 좀더받고싶음"
+    },
+    {
+      "hero": "토론참여-community-extra-073-4",
+      "affiliation": "해오름",
+      "body": "여기댓글보니까 공조회의 왜오래걸리는지알겠네"
     }
   ],
   "community-extra-074": [
@@ -3191,17 +2293,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-74-1",
       "affiliation": "해오름",
       "body": "해오름와 다행복한건아닌데 그말은안들음"
-    },
-    {
-      "hero": "대화회원-74-2",
-      "affiliation": "서광",
-      "body": "그렇다고 이직권유까지는ㅋㅋ 우리일은우리도좋아함",
-      "parent": "seed:community-extra-074:0"
-    },
-    {
-      "hero": "현장회원-074",
-      "affiliation": "서광",
-      "body": "나도일이싫다는글은아님 처우얘기임"
     }
   ],
   "community-extra-075": [
@@ -3220,37 +2311,29 @@ Object.assign(communityComments,{
       "hero": "현장회원-075",
       "affiliation": "해오름",
       "body": "고맙다 일한건기록대로보자좀"
-    }
-  ],
-  "community-extra-076": [
-    {
-      "hero": "대화회원-76-1",
-      "affiliation": "넥시온",
-      "body": "넥시온사람인데 장비설명길어지는사람들있긴함ㅋㅋ"
     },
     {
-      "hero": "대화회원-76-2",
+      "hero": "토론참여-community-extra-075-0",
       "affiliation": "서광",
-      "body": "서광도 자기양식설명하면 오래걸림 서로조심하자",
-      "parent": "seed:community-extra-076:0"
+      "body": "자율성 좋아보여서 부러운거랑 약속맞추는건 다른건데 왜엮지"
     },
     {
-      "hero": "현장회원-076",
-      "affiliation": "태림",
-      "body": "그럼다들 타이머들고회의하자"
+      "hero": "토론참여-community-extra-075-1",
+      "affiliation": "해오름",
+      "body": "우리도 시간안맞추면똑같이말나옴 대충해도되는곳아님"
+    },
+    {
+      "hero": "토론참여-community-extra-075-2",
+      "affiliation": "노스윈드",
+      "body": "소속 선입견으로 인계시작하면 진짜할말없음"
     }
   ],
+  "community-extra-076": [],
   "community-extra-077": [
     {
       "hero": "대화회원-77-1",
       "affiliation": "태림",
       "body": "태림도맨날들음 처음온지역이면 다같이처음인데"
-    },
-    {
-      "hero": "대화회원-77-2",
-      "affiliation": "한가람",
-      "body": "소속큰사람이 인계잘하는거면 우리삶참편하겠다",
-      "parent": "seed:community-extra-077:0"
     }
   ],
   "community-extra-078": [
@@ -3271,40 +2354,12 @@ Object.assign(communityComments,{
       "body": "다들길드이름이죄네ㅋㅋ"
     }
   ],
-  "community-extra-079": [
-    {
-      "hero": "대화회원-79-1",
-      "affiliation": "SSA · 현장대응과",
-      "body": "그럴땐 공통업무만먼저정해놓자고해"
-    },
-    {
-      "hero": "대화회원-79-2",
-      "affiliation": "해오름",
-      "body": "해오름이 끝날시간부터묻는것도 나름역할임ㅋㅋ",
-      "parent": "seed:community-extra-079:0"
-    },
-    {
-      "hero": "현장회원-079",
-      "affiliation": "블루헤이븐",
-      "body": "나진짜끝날시간물었다가 웃음받음"
-    }
-  ],
+  "community-extra-079": [],
   "community-extra-080": [
     {
       "hero": "대화회원-80-1",
       "affiliation": "한가람",
       "body": "한가람도 그럴때 많음"
-    },
-    {
-      "hero": "대화회원-80-2",
-      "affiliation": "넥시온",
-      "body": "넥시온쪽도 현장담당이 그렇게말하면 기록으로조정해야지 그냥빼면안됨",
-      "parent": "seed:community-extra-080:0"
-    },
-    {
-      "hero": "현장회원-080",
-      "affiliation": "잔영",
-      "body": "말하는사람은 매번잠깐이란게문제"
     }
   ],
   "community-extra-081": [
@@ -3312,17 +2367,6 @@ Object.assign(communityComments,{
       "hero": "대화회원-81-1",
       "affiliation": "서광",
       "body": "서광에서왔다하면 다들표정부터봄"
-    },
-    {
-      "hero": "대화회원-81-2",
-      "affiliation": "도원",
-      "body": "어느길드든 잘다니는사람 불만있는사람 다있는건데",
-      "parent": "seed:community-extra-081:0"
-    },
-    {
-      "hero": "현장회원-081",
-      "affiliation": "해오름",
-      "body": "맞아 내주변사례로 전체얘기좀안했으면"
     }
   ],
   "community-extra-082": [
@@ -3330,48 +2374,8 @@ Object.assign(communityComments,{
       "hero": "대화회원-82-1",
       "affiliation": "서광",
       "body": "서광인데 그건욕한사람이양심없다ㅋㅋ"
-    },
-    {
-      "hero": "대화회원-82-2",
-      "affiliation": "아르카디아",
-      "body": "넥시온은 먹는밥도 단가따지나요",
-      "parent": "seed:community-extra-082:0"
-    },
-    {
-      "hero": "현장회원-082",
-      "affiliation": "넥시온",
-      "body": "그농담도오늘세번째다"
     }
   ],
-  "community-extra-083": [
-    {
-      "hero": "대화회원-83-1",
-      "affiliation": "도원",
-      "body": "도원도 사람마다 느낌다름"
-    },
-    {
-      "hero": "대화회원-83-2",
-      "affiliation": "아르카디아",
-      "body": "아르카디아도 부서따라다른데 길드하나로묶기가애매함",
-      "parent": "seed:community-extra-083:0"
-    }
-  ],
-  "community-extra-084": [
-    {
-      "hero": "대화회원-84-1",
-      "affiliation": "미소속",
-      "body": "이글에도 길드맞춰보려는사람나올듯"
-    },
-    {
-      "hero": "대화회원-84-2",
-      "affiliation": "태림",
-      "body": "팀장이름안써도되니까 다음현장에우리도불러줘",
-      "parent": "seed:community-extra-084:0"
-    },
-    {
-      "hero": "현장회원-084",
-      "affiliation": "노스윈드",
-      "body": "이런건소속보다 사람차이가큰듯"
-    }
-  ]
-});
+  "community-extra-083": [],
+  "community-extra-084": []
+};
