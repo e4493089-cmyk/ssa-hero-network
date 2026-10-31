@@ -1,6 +1,7 @@
 import {recruitmentPosts,recruitmentComments} from './recruitment-data';
 import {officialPosts,fieldPosts} from './official-data';
 import {additionalDossiers} from './villains';
+import {caseDossiers} from './case-data';
 import {communityPosts,communityComments} from './community-data';
 export type Post={id:string;title:string;body:string;category:string;hero:string;affiliation:string;created:string;account?:string;views?:number;replies?:number;board?:string};
 export const seed:Post[]=[...officialPosts,...fieldPosts,...recruitmentPosts,...communityPosts,...[
@@ -144,7 +145,7 @@ export const dossiers=[
     "body": "정상 회수물로 표시된 인수 기록과 실제 회수 경위가 일치하는지 확인 중인 사건입니다.\n\n문서번호만으로 해당 물품의 출처나 거래 적법성이 확인되는 것은 아닙니다. 관련 기록을 보유한 기관은 원본을 보존하고 지정 창구로 제출하여 주십시오.\n\n개별 업체명, 거래 조건과 수사 중인 운송 경로는 공개하지 않습니다. 확인되지 않은 거래처 정보를 일반 게시판에 유포하지 마십시오."
   }
 ];
-dossiers.push(...additionalDossiers);
+dossiers.push(...additionalDossiers,...caseDossiers);
 seed.sort((a,b)=>b.created.localeCompare(a.created));
 seed.forEach(post=>{post.replies=initialComments[post.id]?.length||0});
 
