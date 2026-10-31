@@ -9,3 +9,5 @@
 @media(max-width:1250px){.header-search{margin:0 30px}}
 @media(max-width:640px){.header-search{margin:0 18px;gap:9px}.header-search input{font-size:11px;padding:10px}.header-search .primary{font-size:11px;padding:10px}.board-search{flex-wrap:wrap;justify-content:flex-start;gap:7px}.board-search input{flex:1;width:auto;min-width:100px}.board-search label{font-size:10px}.article-neighbors>div{padding:13px 3px;gap:10px}.article-neighbors button{font-size:11px}.article-navigation .panel-head h2{font-size:13px}}
 @media print{.header-search,.board-search,.article-navigation,.pagination{display:none!important}}
+
+.article-navigation .current-post{background:#f0f4f8;cursor:default}.article-navigation .current-post .row-title{font-weight:750;color:#173f6b}.article-navigation .current-post .row-author,.article-navigation .current-post time{font-weight:650;color:#536a82}.article-navigation .current-post:hover{background:#f0f4f8}
