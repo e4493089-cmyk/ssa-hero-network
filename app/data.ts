@@ -2,9 +2,10 @@ import {recruitmentPosts,recruitmentComments} from './recruitment-data';
 import {officialPosts,fieldPosts} from './official-data';
 import {additionalDossiers} from './villains';
 import {caseDossiers} from './case-data';
+import {gatePosts} from './gate-posts';
 import {communityPosts,communityComments} from './community-data';
-export type Post={id:string;title:string;body:string;category:string;hero:string;affiliation:string;created:string;account?:string;views?:number;replies?:number;board?:string};
-export const seed:Post[]=[...officialPosts,...fieldPosts,...recruitmentPosts,...communityPosts,...[
+export type Post={id:string;title:string;body:string;category:string;hero:string;affiliation:string;created:string;account?:string;views?:number;replies?:number;board?:string;relatedCase?:string};
+export const seed:Post[]=[...gatePosts,...officialPosts,...fieldPosts,...recruitmentPosts,...communityPosts,...[
   {
     "id": "c1",
     "category": "자유게시판",
