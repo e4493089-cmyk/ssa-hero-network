@@ -18,7 +18,7 @@ export const seed:Post[]=[...recruitmentPosts,...communityPosts,
 {id:'c4',category:'자유게시판',title:'공용 냉장고에 이름 적어주세요. 제발.',hero:'앵커',affiliation:'SSA 현장대응과',created:'2026-10-29',body:'이름 없는 용기 세 개가 있습니다. 언제 들어왔는지도 모르겠습니다.\n능력으로 해결할 수 있는 문제가 아닙니다.',views:591,replies:4},
 {id:'c5',category:'장비·능력 상담',title:'방수 장갑 건조할 때 열풍 써도 되나요?',hero:'소나기',affiliation:'청람 길드',created:'2026-10-28',body:'안감까지 젖어서 잘 안 마르는데 관리 지침에는 자연 건조만 적혀 있네요.\n예비 장갑 신청해두긴 했습니다. 다들 두 켤레씩 돌려 쓰시나요?',views:208,replies:1},
 ];
-export const initialComments:Record<string,{hero:string;affiliation:string;body:string}[]>={...recruitmentComments,...communityComments,
+export const initialComments:Record<string,{id?:string;parent?:string;hero:string;affiliation:string;body:string}[]>={...recruitmentComments,...communityComments,
 c1:[{hero:'앵커',affiliation:'SSA 현장대응과',body:'교육 참가증 보여주시면 식권 구매 가능합니다. 2층이에요.'},{hero:'철야',affiliation:'백야 길드',body:'오른쪽 엘리베이터 타세요. 왼쪽 타면 또 길 잃습니다.'},{hero:'잔물결',affiliation:'해오름 길드',body:'감사합니다. 이미 왼쪽 탈 생각이었는데 살았네요.'}],
 c2:[{hero:'방벽',affiliation:'청람 길드',body:'이틀 연속은 가능합니다. 사흘째부터는 단골입니다.'},{hero:'철야',affiliation:'백야 길드',body:'그럼 이미 단골이네요.'}],
 c4:[{hero:'리벳',affiliation:'개인 히어로',body:'마지막 문장에서 현장 지휘관의 피로가 느껴져요.'},{hero:'앵커',affiliation:'SSA 현장대응과',body:'농담 아닙니다. 금요일에 정리합니다.'}],
@@ -42,3 +42,13 @@ seed.forEach(p=>{if(casualUpdates[p.id])p.body=casualUpdates[p.id]});
 
 const retainedReplies:Record<string,string[]>={c1:['교육 참가증 보여주면 식권 살수있어요 2층임','엘베 오른쪽 타세요 왼쪽타면 또헤맴ㅋㅋ','ㄳㅋㅋ 이미 왼쪽탈생각이었는데'],c2:['이틀까지는 괜찮음 사흘째부터 단골','그럼 나 이미 단골임ㅋㅋ'],c3:['헬멧 호환규격부터 봐봐 패드만 바꿔도 다름'],c4:['마지막줄에서 피곤함이 느껴진다','금요일에 정리할거임 농담아님']};
 Object.entries(retainedReplies).forEach(([id,replies])=>{initialComments[id]?.forEach((comment,i)=>{if(replies[i])comment.body=replies[i]})});
+
+// Stable IDs let server replies target the existing worldbuilding comments.
+Object.entries(initialComments).forEach(([postId,comments])=>{
+ const post=seed.find(p=>p.id===postId);
+ comments.forEach((comment,index)=>{comment.id='seed:'+postId+':'+index;
+  if(index>0&&post&&comment.hero===post.hero&&comment.affiliation===post.affiliation){
+   const previous=comments[index-1];comment.parent=previous.parent||previous.id;
+  }
+ });
+});
