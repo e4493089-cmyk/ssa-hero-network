@@ -1,5 +1,5 @@
 'use client';
-import {useState,useEffect} from 'react';
+import {useState,useEffect,useRef} from 'react';
 import {Shield,Search,ArrowUpRight,ChevronRight,LockKeyhole,FileText,Radio,Users,MessageSquare,Menu,X,Plus,ArrowLeft,LogOut,CheckCircle,ExternalLink,Bell,Clock,Building2} from 'lucide-react';
 import {seed,dossiers,initialComments,type Post} from './data';
 import {WantedIndex,WantedDetail} from './wanted';
@@ -11,17 +11,75 @@ const SITE_REFERENCE_LABEL=SITE_REFERENCE_DATE.replaceAll('-','. ')+'. '+['SUN',
 function isNewPost(created:string){const reference=Date.parse(SITE_REFERENCE_DATE+'T23:59:59.999+09:00');const timestamp=Date.parse(/^\d{4}-\d{2}-\d{2}$/.test(created)?created+'T00:00:00+09:00':created);const elapsed=reference-timestamp;return Number.isFinite(timestamp)&&elapsed>=0&&elapsed<24*60*60*1000;}
 const sections=['홈','공지·소식','사건·수배정보','커뮤니티','자료실'];
 const submenus:Record<string,string[]>={'공지·소식':['전체 소식','공지사항','보도자료','현장 안내'],'사건·수배정보':['전체 자료','공개수배','사건자료'],'커뮤니티':['전체 글','익명 라운지','질문·상담','인력 모집'],'자료실':['전체 자료','현장 대응','정보 취급','기관 공조']};
+const resources:Post[]=[{title:'현장 초동대응 공통 안내',body:'1. 시민의 안전과 대피 동선을 우선 확보합니다.\n2. 확인된 위험 요소와 미확인 정보를 구분해 보고합니다.\n3. 소속 지휘체계에 상황을 공유하고 후속 인력을 요청합니다.\n4. 현장 인계 시 통제선과 구조 진행 상황을 전달합니다.'},{title:'게시판 정보 취급 지침',body:'피해자와 제보자의 신원을 공개하지 마십시오. 비공개 수사자료, 작전 일정 및 장비 취약점의 게시를 금지합니다. 개인 추정은 반드시 추정임을 명시해 주십시오.'},{title:'민간 길드 · 미소속 공조 안내',body:'소속에 관계없이 현장 지휘 담당자에게 도착과 이탈을 알립니다. 중복 출동 시 임의로 작전 구역을 확대하지 않고 임무를 조정합니다.'}].map((x,i)=>({...x,id:'r'+i,category:'업무자료',hero:'운영지원과',affiliation:'SSA 서울지국',created:'2026-10-28'}));
 export default function Portal(){
 const [searchOpen,SO]=useState(false),[pageNo,PN]=useState(1),[submenu,U]=useState(''),[section,S]=useState('홈'),[category,C]=useState('전체'),[query,Q]=useState(''),[input,I]=useState(''),[me,M]=useState<any>(null),[posts,P]=useState<Post[]>([]),[selected,D]=useState<Post|null>(null),[dossier,V]=useState<any>(null),[modal,A]=useState(''),[error,E]=useState(''),[busy,B]=useState(false),[comments,K]=useState<any[]>([]),[mobile,H]=useState(false),[notice,N]=useState('');
-async function refresh(){try{const r=await fetch('/api/portal');if(!r.ok)throw Error();const d=await r.json();M(d.user);P(d.posts||[])}catch{N('서버 연결을 확인할 수 없습니다. 잠시 후 다시 시도해 주세요.')}}
+const [routeReady,setRouteReady]=useState(false),[routeRevision,setRouteRevision]=useState(0),[postsLoaded,setPostsLoaded]=useState(false);
+const pendingPost=useRef(''),latestPosts=useRef<Post[]>([]),restoredFilter=useRef<string|null>(null),skipPageWrite=useRef(false),replaceRoute=useRef(true);
+latestPosts.current=posts;
+const filterKey=JSON.stringify([section,submenu,category,query]);
+async function refresh(){try{const r=await fetch('/api/portal');if(!r.ok)throw Error();const d=await r.json();M(d.user);P(d.posts||[])}catch{N('서버 연결을 확인할 수 없습니다. 잠시 후 다시 시도해 주세요.')}finally{setPostsLoaded(true)}}
 useEffect(()=>{refresh()},[]);
-useEffect(()=>{PN(1)},[section,submenu,category,query]);
-async function open(p:Post){const destination:Record<string,[string,string]>={'공지사항':['공지·소식','공지사항'],'보도자료':['공지·소식','보도자료'],'자유게시판':['커뮤니티','익명 라운지'],'장비·능력 상담':['커뮤니티','질문·상담'],'인력 모집':['커뮤니티','인력 모집'],'현장 정보':['공지·소식','현장 안내'],'업무자료':['자료실',p.title.includes('정보 취급')?'정보 취급':p.title.includes('공조')?'기관 공조':'현장 대응']};const [parent,child]=destination[p.category]||['공지·소식','전체 소식'];S(parent);U(child);C(['공지사항','보도자료','자유게시판','장비·능력 상담','인력 모집','현장 정보'].includes(p.category)?p.category:'전체');Q('');I('');H(false);D(p);V(null);E('');K([]);try{const r=await fetch('/api/portal?post='+encodeURIComponent(p.id));const d=await r.json();K(d.comments||[])}catch{E('댓글을 불러오지 못했습니다.')}window.scrollTo({top:0,behavior:'smooth'})}
-function openCase(d:any){S('사건·수배정보');U(d.status==='수배 중'?'공개수배':'사건자료');C('전체');Q('');I('');D(null);V(d);H(false);window.scrollTo({top:0,behavior:'smooth'})}
-function go(s:string){SO(false);U('');S(s);C('전체');Q('');I('');D(null);V(null);H(false)}
+useEffect(()=>{
+ if(restoredFilter.current===filterKey){restoredFilter.current=null;return}
+ if(pageNo!==1){skipPageWrite.current=true;PN(1)}
+},[section,submenu,category,query]);
+useEffect(()=>{
+ function restore(){
+  const params=new URLSearchParams(window.location.hash.slice(1));
+  const s=sections.includes(params.get('section')||'')?params.get('section')!:'홈';
+  const child=(submenus[s]||[]).includes(params.get('board')||'')?params.get('board')!:'';
+  const cat=['전체','공지사항','보도자료','자유게시판','장비·능력 상담','인력 모집','현장 정보'].includes(params.get('category')||'')?params.get('category')!:'전체';
+  const term=(params.get('q')||'').slice(0,500);
+  const rawPage=Number(params.get('page')||1),page=Number.isSafeInteger(rawPage)&&rawPage>0?Math.min(rawPage,100000):1;
+  const postId=params.get('post')||'',caseId=params.get('case')||'';
+  const found=[...latestPosts.current,...seed,...resources].find(p=>p.id===postId);
+  restoredFilter.current=JSON.stringify([s,child,cat,term]);replaceRoute.current=true;
+  pendingPost.current=postId&&!found?postId:'';
+  S(s);U(child);C(cat);Q(term);I(term);PN(page);D(found||null);V(postId?null:dossiers.find(d=>d.id===caseId)||null);E('');A('');H(false);setRouteReady(true);setRouteRevision(v=>v+1);
+ }
+ restore();
+ window.addEventListener('popstate',restore);window.addEventListener('hashchange',restore);
+ return()=>{window.removeEventListener('popstate',restore);window.removeEventListener('hashchange',restore)};
+},[]);
+useEffect(()=>{
+ if(!routeReady||!postsLoaded||!pendingPost.current)return;
+ const id=pendingPost.current;
+ const found=posts.find(p=>p.id===id);D(found||null);
+ if(!found){pendingPost.current='';replaceRoute.current=true;N('해당 게시글을 찾을 수 없습니다. 목록에서 다시 확인해 주세요.');}
+},[posts,postsLoaded,routeReady,routeRevision]);
+useEffect(()=>{
+ if(!routeReady)return;
+ if(skipPageWrite.current){skipPageWrite.current=false;return}
+ const params=new URLSearchParams();
+ if(section!=='홈')params.set('section',section);
+ if(submenu)params.set('board',submenu);
+ if(category!=='전체')params.set('category',category);
+ if(query)params.set('q',query);
+ if(pageNo>1)params.set('page',String(pageNo));
+ if(selected||pendingPost.current)params.set('post',selected?.id||pendingPost.current);
+ if(selected?.id===pendingPost.current)pendingPost.current='';
+ if(dossier)params.set('case',dossier.id);
+ const hash=params.toString()?'#'+params.toString():'';
+ if(window.location.hash!==hash){
+  const url=window.location.pathname+window.location.search+hash;
+  if(replaceRoute.current)window.history.replaceState(null,'',url);else window.history.pushState(null,'',url);
+ }
+ replaceRoute.current=false;
+},[section,submenu,category,query,pageNo,selected?.id,dossier?.id,routeReady,postsLoaded]);
+useEffect(()=>{
+ K([]);if(!selected)return;
+ let active=true;
+ fetch('/api/portal?post='+encodeURIComponent(selected.id)).then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{if(active)K(d.comments||[])}).catch(()=>{if(active)E('댓글을 불러오지 못했습니다.')});
+ return()=>{active=false};
+},[selected?.id]);
+
+async function open(p:Post){pendingPost.current='';const destination:Record<string,[string,string]>={'공지사항':['공지·소식','공지사항'],'보도자료':['공지·소식','보도자료'],'자유게시판':['커뮤니티','익명 라운지'],'장비·능력 상담':['커뮤니티','질문·상담'],'인력 모집':['커뮤니티','인력 모집'],'현장 정보':['공지·소식','현장 안내'],'업무자료':['자료실',p.title.includes('정보 취급')?'정보 취급':p.title.includes('공조')?'기관 공조':'현장 대응']};const [parent,child]=destination[p.category]||['공지·소식','전체 소식'];S(parent);U(child);C(['공지사항','보도자료','자유게시판','장비·능력 상담','인력 모집','현장 정보'].includes(p.category)?p.category:'전체');Q('');I('');H(false);D(p);V(null);E('');K([]);window.scrollTo({top:0,behavior:'smooth'})}
+function openCase(d:any){pendingPost.current='';S('사건·수배정보');U(d.status==='수배 중'?'공개수배':'사건자료');C('전체');Q('');I('');D(null);V(d);H(false);window.scrollTo({top:0,behavior:'smooth'})}
+function go(s:string){pendingPost.current='';SO(false);U('');S(s);C('전체');Q('');I('');D(null);V(null);H(false)}
 async function send(data:any){E('');B(true);try{const r=await fetch('/api/portal',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});const d=await r.json();if(!r.ok)throw Error(d.error||'요청을 처리하지 못했습니다.');return true}catch(e:any){E(e.message);return false}finally{B(false)}}
 async function submit(e:React.FormEvent<HTMLFormElement>){e.preventDefault();const f=e.currentTarget,v=Object.fromEntries(new FormData(f));if(modal==='register'&&v.password!==v.confirm){E('비밀번호 확인이 일치하지 않습니다.');return}const data=modal==='write'?{...v,action:'post'}:{...v,action:modal,affiliation:v.kind==='미소속'?'미소속':v.kind+' · '+v.affiliation};if(await send(data)){A('');await refresh();if(modal==='write')go('커뮤니티')}}
-function sub(s:string){U(s);C(s==='현장 안내'?'현장 정보':s==='익명 라운지'?'자유게시판':s==='질문·상담'?'장비·능력 상담':s==='인력 모집'?'인력 모집':['공지사항','보도자료'].includes(s)?s:'전체');D(null);V(null);Q('');I('')}
+function sub(s:string){pendingPost.current='';U(s);C(s==='현장 안내'?'현장 정보':s==='익명 라운지'?'자유게시판':s==='질문·상담'?'장비·능력 상담':s==='인력 모집'?'인력 모집':['공지사항','보도자료'].includes(s)?s:'전체');D(null);V(null);Q('');I('')}
 const all=[...posts,...seed],filtered=all.filter(p=>{const correct=section==='공지·소식'?['공지사항','보도자료','현장 정보'].includes(p.category):section==='커뮤니티'?['자유게시판','장비·능력 상담','인력 모집'].includes(p.category):true;return correct&&(category==='전체'||category===p.category)&&(!query||(p.title+p.body+(isAnonymous(p)?'':p.hero)+p.affiliation).toLowerCase().includes(query.toLowerCase()))});
 function rows(items:Post[],compact=false){return <div className={'rows '+(compact?'compact':'')}>{items.map((p,i)=><button className={"post-row"+(selected?.id===p.id?" current-post":"")} aria-current={selected?.id===p.id?"page":undefined} key={p.id} onClick={()=>{if(selected?.id!==p.id)open(p)}}>{(compact||!submenu||submenu.startsWith('전체'))&&<span className={'tag '+(p.category==='공지사항'?'blue':p.category==='현장 정보'?'green':'')}>{p.category==='현장 정보'?'현장 안내':p.category==='장비·능력 상담'?'질문·상담':p.category}</span>}<span className="row-title">{p.title}{p.replies?<small className="reply">[{p.replies}]</small>:null}{isNewPost(p.created)&&<i className="new">N</i>}</span>{!compact&&<span className="row-author">{isAnonymous(p)?'익명':p.category==='인력 모집'?p.hero+' · '+p.affiliation:p.hero}</span>}<time>{p.created.slice(0,10).replaceAll('-','.').slice(5)}</time></button>)}</div>}
 const boardPosts=selected?all.filter(p=>p.category===selected.category):[];
@@ -38,7 +96,7 @@ return <><div className="official"><div><Shield size={13}/> 특수치안관리�
 <div className="content-grid lower"><section className="panel community-panel"><div className="panel-head"><h2>커뮤니티</h2><span className="muted">현장 밖, 동료들의 이야기</span><button onClick={()=>go('커뮤니티')} aria-label="커뮤니티 더보기"><Plus size={20}/></button></div>{rows(all.filter(p=>['자유게시판','장비·능력 상담','인력 모집'].includes(p.category)).slice(0,5),true)}</section><section className="wanted-panel"><div className="panel-head"><h2>주요 수배정보</h2><button onClick={()=>go('사건·수배정보')} aria-label="수배정보 더보기"><Plus size={20}/></button></div><div className="wanted-heading"><span className="target-icon"><Shield size={29}/></span><span><small>중점 추적 대상 · 집단 수배</small><h3>UNKNOWN</h3></span><span className="red-tag">수배 중</span></div><p>반복 공동 출몰이 확인된 관련자 6인.<br/>접근 및 임의 추적을 삼가 주십시오.</p><div className="names">VALENTINE · SAINT · OMEN<br/>ARBITER · BIJOU · FAUST</div><button className="wanted-button" onClick={()=>{openCase(dossiers[0])}}>공개 수배정보 확인<ArrowUpRight size={16}/></button></section></div>
 <section className="cooperation"><Building2 size={24}/><div><b>소속은 달라도, 우리가 지키는 일상은 같습니다.</b><p>SSA와 협력 길드, 미소속가 함께하는 현장 공조</p></div><span>청람 길드</span><span>백야 길드</span><span>해오름 길드</span></section></>:<div className="page-layout"><aside className="side-nav"><h2>{section==='홈'?'통합검색':section}</h2>{(submenus[section]||['전체 검색결과']).map((s,i)=><button className={(submenu===s||(!submenu&&i===0))?'current':''} key={s} onClick={()=>sub(s)}>{s}<ChevronRight size={14}/></button>)}<div><LockKeyhole size={18}/><b>정보 취급 유의사항</b><p>개인정보와 비공개 작전 자료의 외부 공유를 금지합니다.</p></div></aside><section className="page-body">
 {detail?<><button className="back" onClick={()=>{D(null);V(null);E('')}}><ArrowLeft size={15}/> 목록으로</button><span className="section-kicker">{dossier?'CASE INFORMATION':selected?.category==='현장 정보'?'현장 안내':selected?.category}</span><h1>{dossier?dossier.name:selected?.title}</h1><div className="detail-meta">{dossier?dossier.type:<>{selected&&(isAnonymous(selected)?'익명(작성자)':selected.hero)} <span>{selected?.affiliation}</span> {selected?.created.slice(0,10)}</>}</div>{dossier?<WantedDetail dossier={dossier}/>:<div className="article">{selected?.body}</div>}{selected&&<>{hasDiscussion(selected)&&<><div className="comment-title"><MessageSquare size={18}/> 댓글 <b>{(initialComments[selected.id]?.length||0)+comments.length}</b>{selected.account===me?.id&&<button onClick={async()=>{if(await send({action:'delete',id:selected.id})){D(null);refresh()}}}>내 글 삭제</button>}</div><CommentThread key={selected.id} post={selected} comments={[...(initialComments[selected.id]||[]).map((c,i)=>({...c,id:c.id||'seed:'+selected.id+':'+i})),...comments]} me={me} busy={busy} onLogin={()=>{A('login');E('')}} onSubmit={async(body,parent)=>{if(!await send({action:'comment',post:selected.id,body,parent}))return false;try{const r=await fetch('/api/portal?post='+encodeURIComponent(selected.id));if(!r.ok)throw Error();const d=await r.json();K(d.comments||[]);return true}catch{E('댓글이 등록되었으나 목록을 불러오지 못했습니다. 글을 다시 열어 확인해 주세요.');return true}}}/>{error&&<p className="error">{error}</p>}</>}<section className="article-navigation" aria-label="현재 글과 같은 게시판의 앞뒤 글"><div className="panel-head"><h2>{selected.category==='현장 정보'?'현장 안내':selected.category} 목록</h2><button className="text-link" onClick={()=>{D(null);V(null);E("")}}>전체 목록 <ChevronRight size={14}/></button></div>{rows(articleIndex<0?[selected]:boardPosts.slice(Math.max(0,articleIndex-3),articleIndex+4))}</section></>}</>:<><span className="section-kicker">SSA HERO NETWORK</span><h1>{query?'통합검색':submenu||section}</h1><p className="page-description">{query?'검색어 “'+query+'”에 대한 게시글 검색 결과입니다.':section==='사건·수배정보'?'공개 가능한 사건 정보와 현장 유의사항을 확인하세요.':section==='자료실'?'현장 활동에 필요한 업무 매뉴얼과 공통 안내입니다.':'게시판 구분에 따른 공지 및 업무자료를 확인하실 수 있습니다.'}</p>
-{section==='사건·수배정보'?<><div className="info-box"><LockKeyhole size={17}/> 수사 중인 내용과 상세 능력 분석은 열람이 제한됩니다.</div><WantedIndex key={submenu} onOpen={openCase} kind={submenu}/></>:section==='자료실'?<div className="resources">{[{title:'현장 초동대응 공통 안내',body:'1. 시민의 안전과 대피 동선을 우선 확보합니다.\n2. 확인된 위험 요소와 미확인 정보를 구분해 보고합니다.\n3. 소속 지휘체계에 상황을 공유하고 후속 인력을 요청합니다.\n4. 현장 인계 시 통제선과 구조 진행 상황을 전달합니다.'},{title:'게시판 정보 취급 지침',body:'피해자와 제보자의 신원을 공개하지 마십시오. 비공개 수사자료, 작전 일정 및 장비 취약점의 게시를 금지합니다. 개인 추정은 반드시 추정임을 명시해 주십시오.'},{title:'민간 길드 · 미소속 공조 안내',body:'소속에 관계없이 현장 지휘 담당자에게 도착과 이탈을 알립니다. 중복 출동 시 임의로 작전 구역을 확대하지 않고 임무를 조정합니다.'}].filter((x,i)=>!submenu||submenu==='전체 자료'||['현장 대응','정보 취급','기관 공조'][i]===submenu).map((x,i)=><button key={x.title} onClick={()=>open({id:'r'+i,title:x.title,body:x.body,category:'업무자료',hero:'운영지원과',affiliation:'SSA 서울지국',created:'2026-10-28'})}><FileText/><span><b>{x.title}</b><small>공통 안내 · 열람 가능</small></span><ArrowUpRight size={17}/></button>)}<div className="info-box"><LockKeyhole size={17}/> 전술 분석·비공개 장비 규격: 담당 부서 인가 필요</div></div>:<><form className="board-search" onSubmit={e=>{e.preventDefault();Q(input.trim())}}><label htmlFor="board-query">게시판 검색</label><input id="board-query" value={input} onChange={e=>I(e.target.value)} placeholder="제목 또는 내용"/><button className="primary small">검색</button>{query&&<button type="button" onClick={()=>{Q("");I("")}}>초기화</button>}{section==='커뮤니티'&&<button type="button" className="primary small board-write" onClick={()=>{A(me?'write':'login');E('')}}><Plus size={15}/> 글쓰기</button>}</form>{section==='커뮤니티'&&category==='인력 모집'&&<div className="info-box">작성자 히어로명과 소속이 공개되는 모집 게시판입니다. 모집 업무·지원 자격·일정·보수를 명시하고, 지원자의 개인정보는 공식 접수 창구로 제출해 주십시오.</div>}<p className="list-count">전체 <b>{filtered.length}</b>건</p>{rows(filtered.slice((pageNo-1)*12,pageNo*12))}{!filtered.length&&<div className="empty">검색 결과가 없습니다.</div>}<div className="pagination">{Array.from({length:Math.ceil(filtered.length/12)},(_,i)=><button key={i} className={pageNo===i+1?"chosen":""} aria-label={(i+1)+"페이지"} aria-current={pageNo===i+1?"page":undefined} onClick={()=>{PN(i+1);window.scrollTo({top:0,behavior:"smooth"})}}>{i+1}</button>)}</div></>}</>}
+{section==='사건·수배정보'?<><div className="info-box"><LockKeyhole size={17}/> 수사 중인 내용과 상세 능력 분석은 열람이 제한됩니다.</div><WantedIndex key={submenu} onOpen={openCase} kind={submenu}/></>:section==='자료실'?<div className="resources">{resources.filter((x,i)=>!submenu||submenu==='전체 자료'||['현장 대응','정보 취급','기관 공조'][i]===submenu).map((x,i)=><button key={x.title} onClick={()=>open(x)}><FileText/><span><b>{x.title}</b><small>공통 안내 · 열람 가능</small></span><ArrowUpRight size={17}/></button>)}<div className="info-box"><LockKeyhole size={17}/> 전술 분석·비공개 장비 규격: 담당 부서 인가 필요</div></div>:<><form className="board-search" onSubmit={e=>{e.preventDefault();Q(input.trim())}}><label htmlFor="board-query">게시판 검색</label><input id="board-query" value={input} onChange={e=>I(e.target.value)} placeholder="제목 또는 내용"/><button className="primary small">검색</button>{query&&<button type="button" onClick={()=>{Q("");I("")}}>초기화</button>}{section==='커뮤니티'&&<button type="button" className="primary small board-write" onClick={()=>{A(me?'write':'login');E('')}}><Plus size={15}/> 글쓰기</button>}</form>{section==='커뮤니티'&&category==='인력 모집'&&<div className="info-box">작성자 히어로명과 소속이 공개되는 모집 게시판입니다. 모집 업무·지원 자격·일정·보수를 명시하고, 지원자의 개인정보는 공식 접수 창구로 제출해 주십시오.</div>}<p className="list-count">전체 <b>{filtered.length}</b>건</p>{rows(filtered.slice((pageNo-1)*12,pageNo*12))}{!filtered.length&&<div className="empty">검색 결과가 없습니다.</div>}<div className="pagination">{Array.from({length:Math.ceil(filtered.length/12)},(_,i)=><button key={i} className={pageNo===i+1?"chosen":""} aria-label={(i+1)+"페이지"} aria-current={pageNo===i+1?"page":undefined} onClick={()=>{PN(i+1);window.scrollTo({top:0,behavior:"smooth"})}}>{i+1}</button>)}</div></>}</>}
 </section></div>}
 
 </main><footer><div className="footer-links"><div><button onClick={()=>A('privacy')}>개인정보처리방침</button><button onClick={()=>A('terms')}>이용약관</button><button onClick={()=>A('help')}>이용안내</button><button onClick={()=>A('contact')}>운영 문의</button><span>SSA 서울지국 <ExternalLink size={12}/></span></div></div><div className="footer-content"><div className="footer-logo"><Shield size={27}/><b>SSA</b><span>특수치안관리기구<br/><small>SPECIAL SECURITY AUTHORITY</small></span></div><p>공인 히어로 정보공유 네트워크 · 서울지국 운영지원과<br/><span>UNKNOWN 세계관 기반의 가상 기관·커뮤니티입니다. 실제 기관 및 신고 서비스와 무관합니다.</span><small>© SSA HERO NETWORK. ALL RIGHTS RESERVED.</small></p></div></footer>
