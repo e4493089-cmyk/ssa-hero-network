@@ -25,10 +25,10 @@ export const communityPosts:Post[]=[
   {
     "id": "community-003",
     "category": "장비·능력 상담",
-    "title": "[질문] 개인 히어로는 장비 정기점검 어디로 가세요?",
+    "title": "[질문] 미소속는 장비 정기점검 어디로 가세요?",
     "body": "독립한지 얼마 안됐는데 장비 점검 어디 맡김??\n길드에선 그냥 장비실에 던져놓으면 됐는데 이제 내가 다 찾아야하네\n공인업체 확인하는 데가 따로 있음?",
     "hero": "회원-003",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-31",
     "replies": 3,
     "views": 457
@@ -105,7 +105,7 @@ export const communityPosts:Post[]=[
     "title": "[칭찬] 해오름 교육 담당자 설명 잘하시더라",
     "body": "오늘 교육 설명하시는 분 좋았음\n신입이 똑같은거 두번 물어봐도 끝까지 들어주시더라\n나 처음 배울때 저런 분 만났으면 좀 덜 쫄았을듯",
     "hero": "회원-010",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-28",
     "replies": 3,
     "views": 1416
@@ -157,10 +157,10 @@ export const communityPosts:Post[]=[
   {
     "id": "community-015",
     "category": "자유게시판",
-    "title": "[칭찬] 개인 히어로 공조 때 소속 없는 사람 취급 안 해서 좋았음",
+    "title": "[칭찬] 미소속 공조 때 소속 없는 사람 취급 안 해서 좋았음",
     "body": "오늘 합동으로 나갔는데 개인이라고 애매하게 세워놓지 않아서 좋았음\n담당역할 똑같이 설명해주고 이름도 불러주고\n걍 같이 일하는 느낌이라 좋더라",
     "hero": "회원-015",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-27",
     "replies": 3,
     "views": 201
@@ -182,7 +182,7 @@ export const communityPosts:Post[]=[
     "title": "[질문] 합동교육 첫날 복장 어느 정도가 무난해요?",
     "body": "첫 교육인데 실습 없는날 뭐 입고감?\n평상복 입어도 되나\n괜히 혼자 보호복 입고가면 좀 그럴거같아서ㅋㅋ",
     "hero": "회원-017",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-26",
     "replies": 3,
     "views": 475
@@ -248,7 +248,7 @@ export const communityPosts:Post[]=[
     "title": "[질문] 개인 장비 분실 대비해서 목록 따로 적어두세요?",
     "body": "개인장비 목록 다들 따로 정리함?\n일련번호랑 구매일 같은거\n나는 일단 영수증부터 어디있는지 모르겠는데ㅋㅋ",
     "hero": "회원-023",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-24",
     "replies": 3,
     "views": 1297
@@ -281,7 +281,7 @@ export const communityPosts:Post[]=[
     "title": "[불만] 길드 순위 얘기로 모든 대화 끝내지 맙시다",
     "body": "장갑 말리는 법 물어봤는데 길드 규모 얘기 나오는거 뭐냐\n큰데 다니시는건 알겠고요\n그래서 이 장갑은 어케 말리냐고ㅋㅋ",
     "hero": "회원-026",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-23",
     "replies": 3,
     "views": 1708
@@ -325,7 +325,7 @@ export const communityPosts:Post[]=[
     "title": "[질문] 출입증 사진 갱신할 때 안경 써도 되나요?",
     "body": "출입증 사진 갱신해본사람 안경 써도 됨?\n평소엔 쓰는데 예전 사진은 벗고 찍어서\n괜히 두번 찍으러 가기싫다..",
     "hero": "회원-030",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-22",
     "replies": 3,
     "views": 356
@@ -336,7 +336,7 @@ export const communityPosts:Post[]=[
     "title": "[칭찬] 나중에 연락하겠다던 담당자가 진짜 연락 줌",
     "body": "문의해놓고 까먹고 있었는데 담당자가 먼저 연락줌\n처리중이라고 한번, 끝났다고 한번\n기다리는 입장에선 이게 젤 고맙더라",
     "hero": "회원-031",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-21",
     "replies": 3,
     "views": 493
@@ -380,7 +380,7 @@ export const communityPosts:Post[]=[
     "title": "[불만] 공식 발표를 기다리라는 말은 알겠는데",
     "body": "공식발표 기다리라는건 알겠는데 중간안내라도 좀 해주면 안되나\n수사자료 다 풀라는게 아니고 어디로 물어볼지만이라도\n아무말 없으니까 소문만 더도는거 같음",
     "hero": "회원-035",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-20",
     "replies": 3,
     "views": 1041
@@ -423,7 +423,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "댓글회원-1-1",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "우린 담당자한테 시간조정 의견 모아서 보냈음"
     },
     {
@@ -435,7 +435,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
   "community-003": [
     {
       "hero": "댓글회원-2-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "등록 담당쪽에 공인 목록 물어봐"
     },
     {
@@ -445,7 +445,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "회원-003",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "아 목록이 있구나 ㄳㄳ"
     }
   ],
@@ -525,7 +525,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "댓글회원-7-1",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "장비랑은 따로 넣는게 맞긴해"
     },
     {
@@ -537,7 +537,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
   "community-009": [
     {
       "hero": "댓글회원-8-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "대기를 공백시간으로 세는게 문제"
     },
     {
@@ -564,7 +564,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "회원-010",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "다음에도 일정맞으면 들으려고"
     }
   ],
@@ -627,7 +627,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "댓글회원-13-1",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "안맞는걸 그냥 참고쓰진 마"
     },
     {
@@ -639,7 +639,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
   "community-015": [
     {
       "hero": "댓글회원-14-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "현장에선 역할 확실한 동료가 최고지"
     },
     {
@@ -649,7 +649,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "회원-015",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "그래도 좋았던건 적어놓고싶었음"
     }
   ],
@@ -683,7 +683,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "회원-017",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "다시봤는데 없네 ㄳㅋㅋ"
     }
   ],
@@ -729,7 +729,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "댓글회원-19-1",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "비공개라고 소문이 맞는것도 아님"
     },
     {
@@ -741,7 +741,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
   "community-021": [
     {
       "hero": "댓글회원-20-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "첨부파일 이름도 통일좀"
     },
     {
@@ -785,7 +785,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "회원-023",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "일단 그거부터 나눠야겠네"
     }
   ],
@@ -831,19 +831,19 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "댓글회원-25-1",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "질문글에서 서열잡는애들 꼭있음"
     },
     {
       "hero": "회원-026",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "첫댓 채택ㅋㅋㅋㅋ"
     }
   ],
   "community-027": [
     {
       "hero": "댓글회원-26-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "직접본거랑 해석부터 문장 나눠"
     },
     {
@@ -904,7 +904,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "회원-030",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "예약전에 물어봐야겠네"
     }
   ],
@@ -921,7 +921,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "회원-031",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "ㅇㅇ 개인정보는 안쓸거임"
     }
   ],
@@ -933,7 +933,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "댓글회원-31-1",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "같은 예산으로 품목만 늘려도 될거같은데"
     },
     {
@@ -945,7 +945,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
   "community-033": [
     {
       "hero": "댓글회원-32-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "다른방식으로도 배워보고싶다고 해봐"
     },
     {
@@ -989,7 +989,7 @@ export const communityComments:Record<string,{hero:string;affiliation:string;bod
     },
     {
       "hero": "회원-035",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "ㅇㅇ 문의창구라도 알려줬으면"
     }
   ],
@@ -1020,7 +1020,7 @@ communityPosts.push(...[
     "title": "빌런 이름 멋있게 붙이는거 가끔 짜증남",
     "body": "뉴스엔 코드네임 한줄 나오고 끝인데 뒤처리는 며칠임\n부서진거 치우고 피해자 안내하고 보고서쓰는 사람은 따로 있는데\n밖에선 이름 멋있다고 얘기하는거 들으면 좀 그렇다",
     "hero": "자유회원-0",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-31",
     "replies": 2
   },
@@ -1090,7 +1090,7 @@ communityPosts.push(...[
     "title": "빌런 잡는거보다 그뒤가 더 오래걸리는날",
     "body": "누가 잡혔는지 어디사건인지 여기 쓸생각없음\n그냥 보도자료 한줄로 끝나는 일에도 뒤에서 사람 엄청 붙는다는 얘기\n보고서 하나 덜썼다고 아무것도 안한사람 되는게 좀 억울해서",
     "hero": "자유회원-7",
-    "affiliation": "개인 히어로",
+    "affiliation": "미소속",
     "created": "2026-10-29",
     "replies": 2
   },
@@ -1119,7 +1119,7 @@ Object.assign(communityComments,{
   "free-talk-1": [
     {
       "hero": "토론회원-0-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "우린 그날 퇴근도 못했는데ㅋㅋ 멋있다는 말은 진짜 힘빠짐"
     },
     {
@@ -1131,7 +1131,7 @@ Object.assign(communityComments,{
   "free-talk-2": [
     {
       "hero": "토론회원-1-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "현장에서 마주쳐도 똑같이 말할수있을지"
     },
     {
@@ -1143,7 +1143,7 @@ Object.assign(communityComments,{
   "free-talk-3": [
     {
       "hero": "토론회원-2-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "악당이 벌리고 실무자가 수습하는거 하루이틀이냐"
     },
     {
@@ -1155,7 +1155,7 @@ Object.assign(communityComments,{
   "free-talk-4": [
     {
       "hero": "토론회원-3-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "우린 예전에 공개검토도 안끝났는데 먼저 게시일 잡아놨더라"
     },
     {
@@ -1167,7 +1167,7 @@ Object.assign(communityComments,{
   "free-talk-5": [
     {
       "hero": "토론회원-4-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "같이일하라고 공조해놓고 친해지면 싫어함ㅋㅋ"
     },
     {
@@ -1179,7 +1179,7 @@ Object.assign(communityComments,{
   "free-talk-6": [
     {
       "hero": "토론회원-5-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "성과보다 여유있는사람으로 취급되는게 제일 싫음"
     },
     {
@@ -1191,7 +1191,7 @@ Object.assign(communityComments,{
   "free-talk-7": [
     {
       "hero": "토론회원-6-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "마지막줄 안쓰면 댓글 장비조언으로 꽉참ㅋㅋ"
     },
     {
@@ -1203,7 +1203,7 @@ Object.assign(communityComments,{
   "free-talk-8": [
     {
       "hero": "토론회원-7-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "인계랑 정리 끝나야 진짜 끝인데 보이는건 앞부분뿐이지"
     },
     {
@@ -1215,7 +1215,7 @@ Object.assign(communityComments,{
   "free-talk-9": [
     {
       "hero": "토론회원-8-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "딱 시작부터 피곤한유형"
     },
     {
@@ -1227,7 +1227,7 @@ Object.assign(communityComments,{
   "free-talk-10": [
     {
       "hero": "토론회원-9-0",
-      "affiliation": "개인 히어로",
+      "affiliation": "미소속",
       "body": "정정전 공지 삭제안해서 뭐가최신인지 찾는것도 일"
     },
     {
