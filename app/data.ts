@@ -1,5 +1,7 @@
+import {officialPosts,fieldPosts} from './official-data';
+import {additionalDossiers} from './villains';
 import {communityPosts,communityComments} from './community-data';
-export type Post={id:string;title:string;body:string;category:string;hero:string;affiliation:string;created:string;account?:string;views?:number;replies?:number};
+export type Post={id:string;title:string;body:string;category:string;hero:string;affiliation:string;created:string;account?:string;views?:number;replies?:number;board?:string};
 export const seed:Post[]=[...communityPosts,
 {id:'n1',category:'공지사항',title:'공인 히어로 네트워크 이용 및 정보 취급 안내',hero:'포털운영팀',affiliation:'SSA 서울지국',created:'2026-10-31',body:'본 네트워크는 SSA 등록 히어로 및 협력기관의 현장 정보 공유를 지원합니다.\n\n사건 관계자의 개인정보, 피해자 사진 및 작전 중 취득한 비공개 정보를 게시하지 마십시오. 현장 정보는 확인된 사실과 개인의 추정을 구분하여 작성해 주시기 바랍니다.\n\n긴급한 위험 상황은 게시판 대신 소속 지휘체계를 통해 보고하십시오.\n\n※ 이 사이트는 UNKNOWN 세계관을 배경으로 한 창작 커뮤니티입니다. 실제 신고·긴급구조 서비스가 아닙니다.',views:1248},
 {id:'n2',category:'공지사항',title:'11월 합동 현장대응 교육 일정 안내',hero:'교육훈련과',affiliation:'SSA 서울지국',created:'2026-10-30',body:'11월 합동교육은 능력 충돌 상황에서의 시민 대피와 현장 인계 절차를 중심으로 진행됩니다.\n\n대상: SSA 소속 및 협력 길드 등록 히어로\n과정: 시민 대피 유도 / 초동 현장 통제 / 기관 간 상황 인계\n\n상세 장소와 조 편성은 소속기관 담당자에게 별도 전달합니다.',views:862},
@@ -29,5 +31,13 @@ export const dossiers=[
 {id:'hollow',name:'할로우 서클',type:'불법 중개 · 조직',status:'수사 중',summary:'미등록 능력자의 불법 의뢰 중개 관련 수사 대상.',body:'익명 의뢰망을 통해 능력자의 범죄 가담을 중개한 정황이 확인되었습니다. 회색항로와의 연계설은 현재 확인되지 않았습니다.\n\n확인되지 않은 조직명이나 구성원 추정을 사실처럼 게시하지 마십시오.\n\n[열람 제한] 잠입수사 및 정보원 관련 자료.'}
 ];
 
+seed.splice(0,seed.length,...officialPosts,...fieldPosts,...seed.filter(p=>!['공지사항','보도자료','현장 정보'].includes(p.category)));
+dossiers.splice(0,dossiers.length,...dossiers.filter(d=>d.id!=='moth'),...additionalDossiers);
 seed.sort((a,b)=>b.created.localeCompare(a.created));
 seed.forEach(post=>{post.replies=initialComments[post.id]?.length||0});
+
+const casualUpdates:Record<string,string>={"c1":"내일 교육때문에 서울지국 가는데 거기 식당 외부인도 쓸수있음?\n참가증 있으면 되나.. 처음가서 입구부터 헤맬듯ㅋㅋ","c2":"야간 끝남 배고픔\n국밥 어제도 먹었는데 오늘 또먹어도 되겠지\n다친거아님 걍 밥얘기임","c3":"헬멧이랑 이어피스 같이쓰는사람 귀 안아픔?\n좀만 오래끼면 눌려서 아픈데 나만그런가\n광고말고 착용팁 있으면 좀","c4":"냉장고에 이름없는 통 세개있음\n언제 들어온지도 모름\n능력으로 해결 안됩니다 제발 이름좀","c5":"장갑 안쪽까지 젖었는데 이거 대체 언제마르냐\n열풍 쓰지말라해서 걍 놔뒀는데 예비 하나 더 있어야겠네"};
+seed.forEach(p=>{if(casualUpdates[p.id])p.body=casualUpdates[p.id]});
+
+const retainedReplies:Record<string,string[]>={c1:['교육 참가증 보여주면 식권 살수있어요 2층임','엘베 오른쪽 타세요 왼쪽타면 또헤맴ㅋㅋ','ㄳㅋㅋ 이미 왼쪽탈생각이었는데'],c2:['이틀까지는 괜찮음 사흘째부터 단골','그럼 나 이미 단골임ㅋㅋ'],c3:['헬멧 호환규격부터 봐봐 패드만 바꿔도 다름'],c4:['마지막줄에서 피곤함이 느껴진다','금요일에 정리할거임 농담아님']};
+Object.entries(retainedReplies).forEach(([id,replies])=>{initialComments[id]?.forEach((comment,i)=>{if(replies[i])comment.body=replies[i]})});
